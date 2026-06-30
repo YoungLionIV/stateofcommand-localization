@@ -9,27 +9,42 @@ menu.button.start_game=Iniciar
 menu.button.profile=Perfil
 menu.button.settings=Configurações
 menu.button.quit=Sair
-menu.intro.presented_by=Apresentado para você por
+menu.intro.presented_by=Oferecido por
 menu.intro.layth_issam_elzaim=L a y t h  I s s a m  E l  Z a i m
 # You can transliterate or get the equivalent of my name in your language, 
 #make sure to do a space between each character that is next to each other, 
 #and double space where there would normally be 1 space.
 
+# Credits Screen
+menu.credits.line1=Desenvolvido por Layth Issam El Zaim
+menu.credits.line2=(Desenvolvedor Solo & Criador)
+# to make space between credits do the key then leave value blank like so
+menu.credits.line3=
+#Then I would like for all contributors to put their credit appropriately
+#now add all of yours here and all translators try to keep your locales up to date with the credits as well, you can even put the names in the respective language.
+menu.credits.line4=Tradução hebraica por adar albajari (doctor4rats)
+menu.credits.line5=
+menu.credits.line6=Tradução grega por DLRGR202O
+menu.credits.line7=
+menu.credits.line8=Tradução portuguesa por JvTolentinoS e Amilton Neves (miltinhosouza-maker)
+
+menu.credits.click_to_return=Clique para voltar
+
 # Settings| NEW STUFF AND THAT'S IT [No other updates past my name and the settings for now]
 ui.settings.title=Configurações
 ui.settings.tab.graphics=Gráficos
-ui.settings.tab.language=Linguagem
+ui.settings.tab.language=Idioma
 ui.settings.tab.game_visuals=Visuais do Jogo
 
 ui.settings.resolution=Resolução
 ui.settings.window_mode=Modo Janela
 
-ui.settings.language=Linguagem
+ui.settings.language=Idioma
 
 # UI Manager| Flag Bar
 ui.button.diplomacy=Diplomacia
+ui.button.politics=Política
 ui.button.economy=Economia
-ui.button.unset=Indefinido
 ui.button.military=Militar
 
 # UI Manager| Country Select
@@ -38,10 +53,12 @@ ui.button.play_as=Jogar como
 # UI Manager| Settings
 ui.window.settings=Configurações
 ui.settings.secondary_icons=Usar ícones secundários de unidades
-ui.settings.flag_zoom_out=Mostrar bandeira em zoom longe (Unidades)
+ui.settings.secondary_aircraft_icons=Usar ícones secundários de aeronaves
+ui.settings.nato_aircraft_coloring=Aeronaves coloridas no padrão OTAN (Sem Fundo)
+ui.settings.flag_zoom_out=Exibir bandeira à distância (Unidades)
 ui.settings.nation_overlay=Sobreposição de nação (N)
-ui.settings.always_flag=Sempre mostrar bandeiras nas unidades (F)
-ui.settings.unit_size=Tamanho de unidades
+ui.settings.always_flag=Sempre exibir bandeiras nas unidades (F)
+ui.settings.unit_size=Tamanho das unidades
 
 # UI Manager| City tab (single city)
 ui.label.pop=Pop: %d
@@ -49,24 +66,26 @@ ui.label.buildings=Edifícios:
 ui.label.no_buildings=Sem edifícios
 ui.label.construct=Construir:
 ui.button.factory=Fábrica
-ui.button.military_hq=Quartel general
+ui.button.military_hq=Quartel-general
 ui.button.depot=Depósito
+ui.button.oil_extractor=Bomba de Petróleo
+ui.button.refinery=Refinaria
 
 # UI Manager| City Tab (multiple cities)
 ui.label.cities_selected=%zu Cidades selecionadas
-ui.label.total_buildings=Edificios totais:
+ui.label.total_buildings=Edifícios totais:
 ui.label.no_buildings_selected=Sem edifícios na cidade selecionada
-ui.button.create_units=Criar unidades
+ui.button.create_units=Recrutar Unidades
 ui.button.construct_buildings=Construir edifícios
 
 # UI Manager| Building Tab
-ui.building.industrial_factory=Fábrica industrial
+ui.building.industrial_factory=Fábrica
 ui.building.production_lines=Linha de produção:
 ui.building.inventory=Inventário:
 ui.building.no_items=Sem itens
 ui.button.add_production_line=Adicionar linha de produção
-ui.building.military_hq_title=QG MILITAR
-ui.button.spawn_unit="Spawnar" unidade
+ui.building.military_hq_title=Quartel-General
+ui.button.spawn_unit=Recrutar Unidade
 ui.building.supply_depot=Depósito de suprimento
 ui.building.stored_equipment=Equipamento armazenado:
 ui.label.empty=Vazio
@@ -77,40 +96,115 @@ ui.button.cancel=Cancelar
 
 # UI Manager| Unit Tooltip
 ui.tooltip.no_equipment=Sem equipamento
-ui.tooltip.morale=Morale: %.1f
-ui.tooltip.retreat_behavior=Comportamento de evacuação: %s
+ui.tooltip.morale=Moral: %.1f
+ui.tooltip.organization=Organização: %.2f
+ui.tooltip.retreat_behavior=Comportamento de Retirada: %s
 ui.retreat.normal=Normal
 ui.retreat.hold_position=Manter posição
 ui.retreat.fallback=Recuar
 ui.tooltip.forming=FORMANDO: %.0f%%
+ui.tooltip.assigned_to_hq=Designado para: %s
+ui.tooltip.right_click_for_hq=Botão direito para designar o QG
+ui.tooltip.subordinates=Subordinados: %d
+ui.tooltip.hq_org_bonus=Bônus de Org. do QG: +%.0f%
+
+# UI Manager| HQ Assignment
+ui.hq.assigning=Designando
+ui.hq.assign_mode=Clique em uma unidade de QG para designar
+ui.hq.assign_cancel=Botão direito ou Esc para cancelar
+ui.hq.assigning_factory=Designando Fábrica
+
+# UI Manager| Factory Tab
+ui.factory.no_hq_assigned=Sem QG designado -- Botão direito para designar
+ui.factory.priority_tooltip=O Autoajuste do QG irá ignorar essa linha de produção 
+ui.factory.priority_badge=[PRIORIDADE]
 
 # UI Manager| Invasion Mode
-ui.invasion.mode_active=MODO DE INVASÃO ATIVA
-ui.invasion.draw_line=Definir linha de offenciva para plano
-ui.invasion.toggle_off=Aperte 'I' para desligar
+ui.invasion.mode_active=MODO DE INVASÃO ATIVO
+ui.invasion.draw_line=Definir linha de ofensiva para plano
+ui.invasion.toggle_off=Aperte 'I' para desativar
 ui.button.execute=EXECUTAR
 
 # UI Manager| Building Creation Tab
 ui.window.construct_building=Construir edifício
-ui.label.construct_building=Construir Edifício:
+ui.label.construct_building=Construir edifício:
 
 # UI Manager| Diplomacy tab
 ui.diplomacy.your_nation=Sua nação:
-ui.diplomacy.status_ally=ALLIADOS
+ui.diplomacy.status_ally=ALIADOS
 ui.diplomacy.status_war=EM GUERRA
 ui.diplomacy.status_neutral=Neutro
-ui.diplomacy.button_ally=Declarar Alliança
+ui.diplomacy.button_ally=Declarar Aliança
 ui.diplomacy.button_war=Declarar Guerra
-ui.diplomacy.button_break_alliance=Quebrar Alliança
+ui.diplomacy.button_break_alliance=Quebrar Aliança
 ui.diplomacy.button_peace=Declarar Paz
 ui.diplomacy.info_tooltip=Botão direito no mapa para fechar
+ui.diplomacy.relation_value=Relação
+ui.diplomacy.active_agreements=Acordos Ativos
+ui.diplomacy.no_agreements=Sem Acordos Ativos
+ui.diplomacy.propose_agreement=Propor Acordo
+ui.diplomacy.agreement.air_support=Acordo de Suporte Aéreo
+ui.diplomacy.agreement.equipment_procurement=Fornecimento de Equipamentos
+ui.diplomacy.agreement.satellite_intel=Inteligência via Satélite
+ui.diplomacy.agreement.military_assistance=Assistência Militar
+ui.diplomacy.agreement.financial_aid=Apoio Financeiro
+ui.diplomacy.button.propose_air_support=Propor Apoio Aéreo
+ui.diplomacy.button.propose_equipment=Propor Fornecimento de Equipamentos
+ui.diplomacy.button.propose_satellite=Solicitar Inteligência via Satélite
+ui.diplomacy.button.propose_military_access=Propor Acesso Militar
+ui.diplomacy.button.request_aid=Solicitar Apoio Financeiro
+ui.diplomacy.button.purchase_equipment=Compra de Equipamentos
+ui.diplomacy.button.emergency_aid=Solicitar Ajuda Militar Emergencial
+ui.diplomacy.button.terminate=Encerrar
+ui.diplomacy.purchase.title=Fornecimento de Equipamento
+ui.diplomacy.purchase.price_factor=Fator de Preço
+ui.diplomacy.purchase.filter_hint=Filtrar Equipamento...
+ui.diplomacy.purchase.qty=Quant.
+ui.diplomacy.purchase.buy=Comprar
+ui.diplomacy.purchase.no_equipment=Sem equipamentos disponíveis
+ui.diplomacy.button.declare_ally=Declarar Aliança
+ui.diplomacy.button.declare_war=Declarar Guerra
+ui.diplomacy.button.break_alliance=Romper Aliança
+ui.diplomacy.button.declare_peace=Declarar Paz
+
+# UI Manager| Politics tab
+ui.politics.political_support=Apoio Político
+ui.politics.support_breakdown=Resumo do Apoio
+ui.politics.civilian_stability=Estabilidade Civil
+ui.politics.victory_progress=Progresso de Vitória
+ui.politics.active_policies=Políticas Ativas
+ui.politics.effects=Efeitos:
+ui.politics.conscription=Recrutamento
+ui.politics.economy=Economia
+ui.politics.security=Segurança
+
+# UI Manager| Economy tab
+ui.economy.treasury=Tesouro
+ui.economy.income=Receita
+ui.economy.expenses=Despesas
+ui.economy.net=Receita Líquida
+ui.economy.urban_taxation=Tributação Urbana
+ui.economy.oil_exports=Exportação de Petróleo
+ui.economy.foreign_aid=Ajuda Externa
+ui.economy.total_income=Receita Bruta
+ui.economy.military_upkeep=Despesas Militares
+ui.economy.building_upkeep=Despesas Civis
+ui.economy.equip_purchases=Compra de Equipamentos
+ui.economy.total_expenses=Despesa Total
+ui.economy.national_resources=Estoque Nacional de Recursos
+ui.economy.crude_oil=Petróleo Bruto
+ui.economy.fuel=Combustível
+ui.economy.iron_ore=Minério de Ferro
+ui.economy.steel=Aço
+ui.economy.food=Comestíveis
+ui.economy.consumer_goods=Bens de Consumo
 
 # Editor| Top Bar
-editor.btn.provinces=Províncias
+editor.btn.provinces=Províncias  
 editor.btn.cities=Cidades
 editor.btn.urban=Urbano
-editor.btn.roads=Ruas
-editor.btn.buildings=Prédios
+editor.btn.roads=Estradas
+editor.btn.buildings=Edifícios
 editor.btn.units=Unidades
 editor.btn.nations=Nações
 editor.btn.draw_province=Desenhar províncias
@@ -118,7 +212,7 @@ editor.btn.definitions=Definições
 editor.btn.ref=+ Referência
 editor.tooltip.render_settings=Configurações de renderização
 editor.label.modified=[MODIFICADO]
-editor.label.no_map=Nenhum mapa carregado — Abra a janela de recursos para carregar um mapa.
+editor.label.no_map=Nenhum mapa carregado — Abra a janela de recursos para carregar um mapa
 
 # Editor| Resource Browser
 editor.window.resource_browser=Janela de recursos
@@ -141,7 +235,7 @@ editor.hint.or_new_name=ou digite um novo nome...
 editor.btn.save=Salvar
 
 # Editor| Duplicate / Save To Popups
-editor.popup.duplicate_title=DUplicar conjunto
+editor.popup.duplicate_title=Duplicar conjunto
 editor.popup.duplicate_format=Duplicar %s conjunto
 editor.popup.new_name_label=Novo nome
 editor.btn.duplicate_confirm=Duplicar
@@ -156,83 +250,83 @@ editor.set_type.flag=Bandeira
 editor.window.province=Propriedades da província
 editor.label.province_id=Província ID: %d
 editor.input.province_name=Nome da província
-editor.input.owning_nation=Nação comandante
-editor.input.assign_nation=Assignar para nação
-editor.label.vertices=Vertices: %d  (bordas: %d)
-editor.label.vertex_info=Vertex #%d  (%.6f, %.6f)
+editor.input.owning_nation=Nação Pertencente
+editor.input.assign_nation=Designar para nação
+editor.label.vertices=Vértices: %d  (bordas: %d)
+editor.label.vertex_info=Vértice #%d  (%.6f, %.6f)
 editor.input.vertex_pos=Posição
-editor.label.belongs_to=Pertence a província: %d (%s)
-editor.input.reassign_id=Reassignar para id da Província
+editor.label.belongs_to=Pertence à província: %d (%s)
+editor.input.reassign_id=Redesignar para id da Província
 editor.btn.reassign=Reatribuir vértice
 editor.btn.remove_vertex=Remover vértice
 editor.label.interior_vertex=(vértice interior)
-editor.label.min_verts=(min 3 vértice)
+editor.label.min_verts=(mín. 3 vértices)
 editor.label.province_management=Administração de província
 editor.btn.stop_adding=Parar de adicionar
 editor.btn.add_vertex=Adicionar vértice
 editor.label.click_boundary=Clique na borda para inserir
 editor.btn.draw_new_province=Desenhar nova província
-editor.label.drawing_verts=Desenhando... (%d vértice)
-editor.btn.delete_province=Deletar essa província
+editor.label.drawing_verts=Desenhando... (%d vértices)
+editor.btn.delete_province=Deletar essa província  
 
 # Editor| Nation Panel
-editor.window.nation=Propriedades da nação
-editor.label.nation_hash=Cortar: %u  Províncias: %d
-editor.input.nation_name=Nome da nação
+editor.window.nation=Propriedades da Nação
+editor.label.nation_hash=Hash: %u  Províncias: %d
+editor.input.nation_name=Nome da Nação
 editor.label.no_flag=(Sem bandeira)
 editor.label.flag_set=Definir bandeira: %s
-editor.btn.change_flag=Mudar bandeira...
+editor.btn.change_flag=Substituir bandeira...
 editor.label.allies=Aliados
 editor.btn.add_ally=Adicionar aliados
 editor.label.enemies=Inimigos
-editor.btn.add_enemy=Adicinar inimigos
-editor.label.province_list_header=Lista de províncias
-editor.label.state_management=Administração do estado
-editor.input.new_state_name=Novo estado Nome##Novoestado
-editor.btn.create_state=Criar estado
-editor.btn.delete_state=Deletar este estado
+editor.btn.add_enemy=Adicionar inimigos
+editor.label.province_list_header=Lista de Províncias
+editor.label.state_management=Gerenciamento de Estado
+editor.input.new_state_name=Nome do Novo Estado##newstate
+editor.btn.create_state=Criar Estado
+editor.btn.delete_state=Deletar este Estado
 
 # Editor| City Panel
-editor.window.city=Editor de cidade
+editor.window.city=Editor de Cidade
 editor.label.cities_count=Cidades: %d
-editor.btn.placing_cities=Colocação de cidades...
-editor.btn.place_city=Colocar cidade
-editor.label.click_map_place=Clique no mapa para colocar
+editor.btn.placing_cities=Posicionando Cidades...
+editor.btn.place_city=Posicionar Cidade
+editor.label.click_map_place=Clique no mapa para posicionar
 editor.label.city_id=Cidade #%d
 editor.input.city_name=Nome
 editor.input.city_state=Estado
 editor.input.city_province=Província
 editor.input.population=População
-editor.input.lon_lat=Lon / Lat
-editor.checkbox.urban_area=Área Urbana
+editor.input.lon_lat=Long. / Lat.
+editor.checkbox.urban_area=Zona Urbana
 editor.label.world_coords=Mundo: (%.4f, %.4f)
 editor.btn.delete_city=Deletar cidade
 editor.input.filter=Filtrar
 
 # Editor| Road Panel
-editor.window.road=Editor de ruas
-editor.label.segments=Seguimentos: %d
-editor.btn.new_segment=Novo seguimento
+editor.window.road=Editor de Estradas
+editor.label.segments=Segmentos: %d
+editor.btn.new_segment=Novo segmento
 editor.label.add_mode=Modo de adicionar
 editor.btn.stop=Parar
 editor.btn.add_points=Adicionar pontos
-editor.label.segment_info=Seguimento #%d (%d pts)
+editor.label.segment_info=Segmento #%d (%d pts)
 editor.input.point_pos=Posição do ponto
 editor.btn.delete_point=Deletar ponto
-editor.btn.delete_segment=Deletar Seguimento
+editor.btn.delete_segment=Deletar Segmento
 
 # Editor| Building Panel
-editor.window.building=Editor de prédios
-editor.label.buildings_click=Edifícios: %d  — Clique no mapa para colocar
+editor.window.building=Editor de Edifícios
+editor.label.buildings_click=Edifícios: %d  — Clique no mapa para posicionar
 editor.label.building_id=Edifício #%d
 editor.input.building_type=Tipo
 editor.input.owner_state=Estado controlador
 editor.input.city_assign=Cidade
 editor.input.building_pos=Posição
-editor.label.drag_map=Arraste para mover.
+editor.label.drag_map=Arraste para mover
 editor.label.factory_props=Propriedades da Fábrica
-editor.input.throughput=Capacidade de processamento
-editor.input.shipping_threshold=Limite de envio
+editor.input.throughput=Capacidade de Processamento
+editor.input.shipping_threshold=Limite de Remessa
 editor.label.production_lines_count=Linhas de produção: %d
 editor.input.equipment=Equipamento
 editor.input.capacity=Capacidade
@@ -241,14 +335,14 @@ editor.btn.add_production_line=Adicionar linha de produção
 editor.label.depot_props=Propriedade do depósito
 editor.input.max_equipment=Capacidade máxima de equipamento
 editor.input.max_manpower=Capacidade máxima de mão de obra
-editor.label.military_hq=Quartel general militar
+editor.label.military_hq=Quartel-General
 editor.label.no_additional_props=Sem propriedades adicionais
-editor.btn.delete_building=Deletar construção
+editor.btn.delete_building=Deletar Edifício
 
 # Editor| Unit Panel
 editor.window.unit=Editor de unidades
 editor.label.units_click=Unidades: %d  — Clique no mapa para colocar
-editor.label.unit_id=Unidades #%d
+editor.label.unit_id=Unidade #%d
 editor.input.given_name=Nome
 editor.label.given_name_hint=Nome da unidade (Opcional)
 editor.input.definition=Definição
@@ -265,22 +359,22 @@ editor.mode.buildings=Edifícios
 editor.mode.units=Unidades
 editor.mode.nations=Nações
 editor.status.modified=[MODIFICADO]
-editor.status.dropper_active=| Contador ativo
+editor.status.dropper_active=| CONTA-GOTAS ATIVO
 editor.status.add_vertex=| ADICIONAR VÉRTICE
-editor.status.no_map=Nenhum mapa lido
+editor.status.no_map=Nenhum mapa carregado
 
 # Editor| Help Overlay
 editor.window.controls=Controles
 editor.help.navigation=Navegação
-editor.help.wasd=WASD / Movimento
+editor.help.wasd=WASD / Arrasto Direito: Panorâmico
 editor.help.scroll=Roda do mouse: Zoom
 editor.help.selection=Seleção
-editor.help.click=Clique: Selecionar / Colocar
+editor.help.click=Clique: Selecionar / Posicionar
 editor.help.shift_click=Shift+Clique: Nação (Modo prov)
 editor.help.drag=Arrastar: Mover selecionados
 editor.help.escape=Esc: Desselecionar
 editor.help.ctrl_s=Ctrl+S: Salvar tudo
-editor.help.pick=Pick button: Ferramenta contadora
+editor.help.pick=Botão Seleção: Ferramenta conta-gotas
 
 # Editor| Dropper Overlay
 editor.dropper.click_province=Clique na província para pegar o estado
@@ -288,22 +382,22 @@ editor.dropper.click_province=Clique na província para pegar o estado
 # Editor| Dropper Button
 editor.btn.picking=Pegando...
 editor.btn.pick=Pegar
-editor.tooltip.dropper=Clique na província no mapa para pegar seu estado controlador
+editor.tooltip.dropper=Clique em uma província no mapa para definir o estado dono
 
 # Editor| Nation/Province Combo Filters
 editor.hint.search_nations=Procurar nações...
 editor.hint.search_provinces=Procurar províncias...
 
 # ---- Editor — Province Creation Panel ----
-editor.window.draw_province=Desenhar províncias
+editor.window.draw_province=Desenhar Províncias
 editor.label.click_map_vertices=Clique no mapa para colocar vértices
 editor.label.vertices_placed=Vértices colocados: %d
 editor.input.create_prov_name=Nome##crprov
 editor.input.create_prov_state=Estado##crprov
-editor.btn.undo_last=Desfazer último vértice
-editor.btn.finish_province=Finalizar província
-editor.label.or_click_first=Ou clique perto do primeiro vértice (ponto verde) para fechar a forma.
-editor.label.min_3_verts=Para finalizar, coloque pelo menos 3 vértices.
+editor.btn.undo_last=Desfazer Último Vértice
+editor.btn.finish_province=Finalizar Província
+editor.label.or_click_first=Ou clique próximo ao primeiro vértice (ponto verde) para fechar o formato.
+editor.label.min_3_verts=Para finalizar,   coloque pelo menos 3 vértices.
 
 # Editor| Reference Overlay Panel
 editor.window.ref_image=Propriedades da imagem de referência
@@ -320,52 +414,424 @@ editor.btn.fit_to_map=Ajustar para o mapa
 
 # Editor| Render Settings 
 editor.window.render_settings=Configurações de renderização
-editor.label.tile_textures=Texturas de bloco
-editor.checkbox.show_tile_textures=Mostra texturas de bloco
-editor.input.tint_strength=Intensidade da coloração
-editor.label.nation_rendering=Renderização da nação
-editor.checkbox.render_by_nation=Renderizar por cor da nação
-editor.checkbox.show_nation_flags=Mostrar bandeiras das nações
+editor.label.tile_textures=Texturas de Ladrilho
+editor.checkbox.show_tile_textures=Mostrar texturas de ladrilho
+editor.input.tint_strength=Intensidade da Coloração
+editor.label.nation_rendering=Renderização da Nação
+editor.checkbox.render_by_nation=Renderizar por Cor da Nação
+editor.checkbox.show_nation_flags=Mostrar Bandeiras das Nações
 editor.tooltip.nation_flags=Ilumine o centro do território com as bandeiras nacionais.
-editor.label.layer_opacities=Opacidades das camadas
+editor.label.layer_opacities=Opacidades das Camadas
 editor.input.provinces_opacity=Províncias
-editor.input.roads_opacity=Ruas
-editor.input.city_dots_opacity=Pontos da cidade
-editor.input.urban_areas_opacity=Áreas urbanas
+editor.input.roads_opacity=Estradas
+editor.input.city_dots_opacity=Símbolos Pontuais de Cidade
+editor.input.urban_areas_opacity=Zonas Urbanas
 editor.input.buildings_opacity=Edifícios
 editor.input.units_opacity=Unidades
-editor.btn.reset_all=Resetar tudo
+editor.btn.reset_all=Reiniciar Tudo
 
 # Editor| Urban Area Panel
-editor.window.urban=Editor de área urbana
-editor.label.urban_count=Áreas urbanas: %d
-editor.btn.draw_urban=Desenhar área urbana
+editor.window.urban=Editor de Zona Urbana
+editor.label.urban_count=Zonas Urbanas: %d
+editor.btn.draw_urban=Desenhar Zona Urbana
 editor.label.drawing_urban=Desenhando... (%d vértices)
-editor.label.urban_id=Área urbana #%d  (%d vértices)
+editor.label.urban_id=Zona Urbana #%d  (%d vértices)
 editor.input.urban_name=Nome
-editor.input.urban_state=Estado dono
-editor.input.urban_province=província
+editor.input.urban_state=Estado Proprietário
+editor.input.urban_province=Província
 editor.input.urban_pop=População
-editor.input.filter_urban=Filtro##urbano
+editor.input.filter_urban=Filtro##urban
 
 # Editor| Urban Area Creation Panel
-editor.window.draw_urban=Desenhar área urbana
-editor.input.create_urban_name=Nome##crurbano
-editor.input.create_urban_state=Estado##crurbano
-editor.btn.finish_urban=Finalizar área urbana
+editor.window.draw_urban=Desenhar Zona Urbana
+editor.input.create_urban_name=Nome##crurban
+editor.input.create_urban_state=Estado##crurban
+editor.btn.finish_urban=Finalizar Zona Urbana
 
 # Editor| Nation Editor Tab
-editor.window.nation_editor=Editor de nação
+editor.window.nation_editor=Editor de Nação
 editor.label.nations_count=Nações: %d
-editor.input.filter_nations=Filtro##nações
-editor.label.selected_nation=Selecionado: %s
-editor.input.nation_name_ne=Nação nome##ne
+editor.input.filter_nations=Filtro##nations
+editor.label.selected_nation=Selecionada: %s
+editor.input.nation_name_ne=Nome da Nação##ne
 editor.label.provinces_ne=Províncias##ne
 
 # Editor| Definition Editor 
-editor.window.definition_editor=Editor de definição
+editor.window.definition_editor=Editor de Definição
 editor.btn.equipment_tab=Equipamento
-editor.btn.units_tab=Unidade
+editor.btn.units_tab=Unidades
 editor.btn.save_all_def=Salvar tudo
 editor.btn.close=Fechar
-editor.label.background_icons=Ícones de fundo
+editor.label.background_icons=Ícones de Fundo
+
+# Map Events| UI
+ui.event.expires=Vencimento
+ui.event.effect_stability=Estabilidade
+ui.event.effect_political=Apoio Político
+ui.event.effect_treasury=Tesouro
+ui.event.chance_outcome=Chance de efeito
+
+# Map Events| Anti-Government Protests
+event.protest.title=Manifestações Antigovernamentais
+event.protest.desc=Demonstrações surgiram em %s.
+event.protest.negotiate=Negociar
+event.protest.crack_down=Reprimir
+event.protest.ignore=Ignorar
+
+# Map Events| Corruption Scandal
+event.corruption.title=Escândalo de Corrupção
+event.corruption.desc=Um escândalo de corrupção foi exposto em %s.
+event.corruption.investigate=Investigar
+event.corruption.cover_up=Ocultar
+
+# Map Events| Prominent Defection
+event.defection.title=Deserção Proeminente
+event.defection.desc=Um oficial de alta patente desertou de %s.
+event.defection.amnesty=Oferecer Anistia
+event.defection.denounce=Denunciar Traidor
+
+# Map Events| Religious Leaders Statement
+event.religious.title=Declaração de Líderes Religiosos
+event.religious.desc=Líderes religiosos emitiram uma declaração.
+event.religious.support=Apoiar Declaração
+event.religious.reject=Rejeitar Declaração
+event.religious.neutral=Permanecer Neutro
+
+# Map Events| National Reconciliation
+event.reconciliation.title=Proposta de Reconciliação Nacional
+event.reconciliation.desc=Uma proposta de reconciliação nacional foi apresentada.
+event.reconciliation.accept=Aceitar Negociação
+event.reconciliation.reject=Rejeitar Negociação
+
+# Map Events| Local Council Autonomy
+event.autonomy.title=Conselho Local Declara Autonomia
+event.autonomy.desc=O conselho local em %s declarou autonomia.
+event.autonomy.recognize=Reconhecer
+event.autonomy.negotiate=Negociar
+event.autonomy.suppress=Reprimir
+
+# Map Events| Refugee Crisis
+event.refugee.title=Crise de Refugiados
+event.refugee.desc=Uma crise de refugiados tem se desdobrado próximo a %s.
+event.refugee.assistance=Providenciar Auxílio
+event.refugee.military=Priorizar Necessidades Militares
+
+# Map Events| Local Tribal Alliance
+event.tribal.title=Aliança Tribal Local
+event.tribal.desc=Uma aliança tribal local ofereceu apoio em %s.
+event.tribal.support=Oferecer Apoio
+event.tribal.ignore=Ignorar
+
+# Settings| Window Mode Labels
+ui.settings.window_mode.windowed=Modo-Janela
+ui.settings.window_mode.borderless=Sem Borda
+ui.settings.window_mode.fullscreen=Tela Cheia
+
+# Settings| Notes
+ui.settings.note.restart_safe=Essas configurações são seguras para alteração durante o jogo.
+ui.settings.note.lang_live=Mudanças de Idioma têm efeito imediato.
+
+# Settings| Dev
+ui.settings.reveal_all_units=Revelar todas as Unidades (Dev)
+
+# City Tooltip
+ui.city.tooltip.population=População
+ui.city.tooltip.stability=Estabilidade
+ui.city.tooltip.food_supply=Comestíveis
+ui.city.tooltip.food_stockpile=Estoque de Comestíveis
+ui.city.tooltip.consumer_goods=Bens de Consumo
+ui.city.tooltip.cg_stockpile=Estoque de B.C.
+ui.city.tooltip.manpower_pool=Banco de Mão-de-Obra
+ui.city.tooltip.building_health=Integridade do Edifício
+ui.city.tooltip.damaged=Danificada
+ui.city.tooltip.depot_supply=Depósito de Suprimento
+ui.city.tooltip.employment=Emprego
+
+# Building| Construction
+ui.building.construction_site=Canteiro de Obras
+ui.building.building_label=Edifício
+ui.building.family_label=Família
+ui.building.progress_label=Progresso
+ui.building.remaining_label=Restante
+ui.building.cancel_construction=Cancelar Construção
+
+# Building| Tooltips
+ui.building.tooltip.health=Integridade
+ui.building.tooltip.output_inventory=Inventário de Produção
+ui.building.tooltip.steel=Aço
+ui.building.tooltip.supplies_stored=Suprimentos Armazenados
+ui.building.tooltip.manpower_stored=Mão-de-Obra
+ui.building.tooltip.fuel=Combustível
+ui.building.tooltip.crude_oil=Petróleo Bruto
+ui.building.tooltip.iron_ore=Minério de Ferro
+ui.building.tooltip.aircraft_stored=Aeronaves Armazenadas
+ui.building.tooltip.food=Comestíveis
+ui.building.tooltip.consumer_goods_stored=Bens de Consumo
+
+# Building| Factory
+ui.building.no_family_assigned=NENHUMA FAMÍLIA DESIGNADA
+ui.building.set_family=Definir Família
+ui.building.change=Trocar
+ui.building.thr=Proc.
+ui.building.hq_label=QG
+ui.building.hq_none=NENHUM
+ui.building.no_families=Nenhuma família disponível
+ui.building.none_all_families=(Nenhuma - Todas as Famílias)
+ui.building.factories_assigned=Fábricas Designadas
+
+# Building| Individual Buildings (Headers)
+ui.building.oil_extractor=Bombas de Petróleo
+ui.building.refinery=Refinaria
+ui.building.agri_center=Centro Agrícola
+ui.building.iron_mine=Mina de Ferro
+ui.building.heavy_industry=Indústria Pesada
+ui.building.civilian_industry=Indústria Civil
+ui.building.airbase=Base Aérea
+ui.building.arms_factory=Fábrica de Armamentos
+ui.building.vehicle_factory=Fábrica de Veículos
+ui.building.artillery_factory=Fábrica de Artilharia
+
+# Building| Oil Extractor
+ui.building.oil.rate_ship=Taxa: %.1f bbl/s  |  Remessa para: %d
+ui.building.oil.stored=Armazenados: %d / %d Barris
+ui.building.oil.next_barrel=Próximo Barril: %.0f%%
+ui.building.oil.dispatching=Despachando Remessa de Barris...
+ui.building.oil.filling=Preenchendo (%d/%d)
+
+# Building| Refinery
+ui.building.refinery.rate_ship=Taxa: %.1f bbl/s  |  Remessa para: %d
+ui.building.refinery.crude_stored=Bruto: %d / %d
+ui.building.refinery.fuel_stored=Combustível: %d / %d
+ui.building.refinery.no_crude=Nenhum Petróleo Bruto - Inativo
+ui.building.refinery.dispatching=Despachando Remessa de Combustíveis...
+ui.building.refinery.refining=Refinando...
+
+# Building| Agricultural Center
+ui.building.agri.rate_ship=Taxa: %.1f Comestíveis/s  |  Remessa para: %d
+ui.building.agri.stored=Armazenado: %d / %d Comestíveis
+ui.building.agri.dispatching=Despachando Remessa de Comestíveis...
+ui.building.agri.harvesting=Colhendo (%d/%d)...
+
+# Building| Iron Mine
+ui.building.iron.rate_ship=Extração: %.1f t/s  |  Remessa para: %d
+ui.building.iron.stored=Armazenado: %d / %d Minério de Ferro
+ui.building.iron.dispatching=Despachando Remessa de Minério de Ferro...
+ui.building.iron.mining=Minerando (%d/%d)...
+
+# Building| Heavy Industry
+ui.building.heavy.rate_ship=Conversão: %.1f t/s  |  Remessa para: %d
+ui.building.heavy.ore_input=Insumos de Ferro: %d / %d
+ui.building.heavy.steel_output=Produção de Aço: %d  (Remessa para %d)
+ui.building.heavy.waiting_ore=Esperando por Minérios de Ferro...
+ui.building.heavy.dispatching=Despachando Remessa de Aço...
+ui.building.heavy.smelting=Siderurgizando...
+
+# Building| Civilian Industry
+ui.building.civ.rate_ship=Taxa: %.1f Consumíveis/s  |  Remessa para: %d
+ui.building.civ.buffer_stored=Buffer: %d Consumíveis  |  Armazenado: %d / %d
+ui.building.civ.dispatching=Despachando Remessa de Bens de Consumo...
+ui.building.civ.producing=Produzindo (%d/%d)...
+ui.building.civ.connected_urban=Zonas Urbanas Conectadas
+ui.building.civ.no_urban=Nenhuma Zona Urbana na Nação
+ui.building.civ.urban_entry=  %s (%.0f%%, q=%d, %.0fkm)
+ui.building.civ.show_less=Exibir Menos
+ui.building.civ.show_all=Exibir Tudo
+ui.building.civ.nation_status=Estado da Nação
+ui.building.civ.avg_supply=  Média Suprida: %.0f%%  |  Menor: %.0f%%  |  Zonas Urbanas: %d
+ui.building.civ.rate_demand=  Sua Taxa: %.1f/s  |  Demanda Total: %.1f/s
+ui.building.civ.tooltip=Bens de Consumo melhoram estabilidade urbana e reduzem agitação.
+
+# Building| Depot
+ui.building.depot.equipment=Equipamento: %d / %d
+ui.building.depot.manpower=Mão-de-Obra: %d / %d
+ui.building.depot.crude=Petróleo Bruto: %d / %d
+ui.building.depot.fuel=Combustível: %d / %d
+
+# Building| Airbase
+ui.building.airbase.aircraft=Aeronaves: %d / %d (%d Designadas)
+ui.building.airbase.stationed=Aeronaves Estacionadas
+ui.building.airbase.no_aircraft=Nenhuma aeronave estacionada aqui
+ui.building.airbase.sorties=Incursões
+ui.building.airbase.no_sorties=Nenhuma Incursão Planejada
+ui.building.airbase.new_sortie=+ Nova Incursão
+ui.building.airbase.airborne=[AEROTRANSPORTADO]
+ui.building.airbase.planned=[PLANEJADA]
+ui.building.airbase.sortie_entry=Incursão #%d - %s
+ui.building.airbase.aircraft_count=Aeronaves: %d  |  Alt: %.0f ft
+ui.building.airbase.target=Alvo: (%.4f, %.4f)
+ui.building.airbase.no_target=Nenhum Alvo Definido
+ui.building.airbase.edit=Editar
+ui.building.airbase.dismiss=Descartar
+ui.building.airbase.launch=Lançar
+ui.building.airbase.x_button=X
+ui.building.airbase.assign_hq=Designar QG
+ui.building.airbase.unassign=Desmarcar
+ui.building.airbase.available_fmt=(%d Disponível)
+
+# Building| Creation Tab
+ui.building.create.select_type=Selecionar tipo de edifício
+ui.building.create.click_to_place=Botão esquerdo no mapa para posicionar.
+ui.building.create.press_b=Pressione B ou Cancelar para fechar.
+ui.building.create.arms_factory=Fábrica de Armamentos
+ui.building.create.military_hq=Quartel-General
+ui.building.create.depot=Depósito
+ui.building.create.oil_extractor=Bomba de Petróleo
+ui.building.create.refinery=Refinaria
+ui.building.create.agri_center=Centro de Agricultura
+ui.building.create.iron_mine=Mina de Ferro
+ui.building.create.heavy_industry=Indústria Pesada
+ui.building.create.vehicle_factory=Fábrica de Veículos
+ui.building.create.artillery_factory=Fábrica de Artilharia 
+ui.building.create.civilian_industry=Fábrica Civil
+ui.building.create.cancel=Cancelar
+
+# Unit Tooltips
+ui.tooltip.unknown_unit=Unidade Desconhecida
+ui.tooltip.unknown=Desconhecido
+ui.tooltip.fuel_status=Combustível: %.0f%% (%+.1f/t)  Penalidade: %.0f%%
+ui.tooltip.road_health=Integridade da Estrada: %.0f%% (-%.0f%% Velocidade)
+
+# Infantry / Road Health Label
+ui.label.road_health=Integridade da Estrada
+ui.label.health=Integridade
+
+# Economy Tab
+ui.economy.treasury_label=Tesouro
+ui.economy.income_label=Receita
+ui.economy.expenses_label=Despesas
+ui.economy.net_label=Receita Líquida
+ui.economy.total_income_fmt=Receita Total:      +%.1f /s
+ui.economy.total_expenses_fmt=Despesa Total:    -%.1f /s
+ui.economy.net_fmt=Líquido:               %+.1f /s
+ui.economy.net_tooltip_fmt=Taxa de Receita Líquida. Nesse ritmo, o tesouro será %s por %.0f no próximo minuto.
+ui.economy.net_grow=crescer
+ui.economy.net_shrink=diminuir
+ui.economy.urban_tax_fmt=Tributação Urbana:    +%.1f /s
+ui.economy.oil_exports_fmt=Exportação de Petróleo:       +%.1f /s
+ui.economy.foreign_aid_fmt=Ajuda Externa:       +%.1f /s
+ui.economy.military_upkeep_fmt=Despesas Militares:   -%.1f /s
+ui.economy.building_upkeep_fmt=Despesas Civis:   -%.1f /s
+ui.economy.equip_purchases_fmt=Compra de Equipamentos:  -%.1f /s
+ui.economy.resources_label=Estoque Nacional de Recursos
+ui.economy.crude_oil_fmt=Petróleo Bruto:        %d
+ui.economy.fuel_fmt=Combustível:             %d
+ui.economy.iron_ore_fmt=Minério de Ferro:         %d
+ui.economy.steel_fmt=Aço:            %d
+ui.economy.food_fmt=Comestíveis:             %d
+ui.economy.consumer_goods_fmt=Bens de Consumo:   %d
+
+# Economy| Tooltips
+ui.economy.tooltip.tax=Receita Tributária das populações urbanas sobre seu controle.\nAprox. 1 Tesouro/seg por 1000 cidadãos.
+ui.economy.tooltip.oil=Receita vinda da exportação de petróleo bruto excedente\n(produção excedendo refinaria doméstica + consumo de combustível da unidade).\n1 barril/seg excedente = 0.5 tesouro/seg.
+ui.economy.tooltip.aid=Ajuda externa\nsobre acordos de ajuda financeira ativos.
+ui.economy.tooltip.military_upkeep=Manutenção de Equipamento (0.5%% do Custo de Produção/seg por item)\n+ Custo de Mão-de-Obra (0.5/seg por unidade).
+ui.economy.tooltip.building_upkeep=Custo de manutenção para todos os edifícios\nFábricas: 1.0/s, QG: 2.0/s, Depósitos: 0.5/s,\nPetróleo/Refinaria/Mina/Indústria Pesada: 1.5/s,\nAgricultura: 0.5/s, Indústria Civil: 0.3/s, Base aérea: 3.0/s.
+ui.economy.tooltip.equip_purchases=Custo amortizado do equipamento comprado\nde outras nações via acordos de fornecimento.
+
+# Politics Tab
+ui.politics.political_support_label=Apoio Político
+ui.politics.civilian_stability_label=Estabilidade Civil
+ui.politics.victory_progress_label=Progresso de Vitória
+ui.politics.active_policies_label=Políticas Ativas
+ui.politics.objectives_label=Objetivos
+ui.politics.conscription_label=Recrutamento
+ui.politics.economy_label=Economia
+ui.politics.security_label=Segurança
+ui.politics.hold_until_fmt=Manter até: %04d-%02d-%02d
+ui.politics.elite=Elite
+ui.politics.military=Militares
+ui.politics.government=Governo
+ui.politics.urban_civilian=Civil Urbano
+
+# Politics| Policy Effects
+ui.politics.effects_on_selection=Efeitos em Seleção
+ui.politics.effect.elite=Elite
+ui.politics.effect.military=Militares
+ui.politics.effect.government=Governo
+ui.politics.effect.urban_civilian=Civil Urbano
+ui.politics.effect.stability=Estabilidade
+ui.politics.effect.manpower=Mão-de-Obra
+ui.politics.effect.factory_output=Produção de Fábrica
+ui.politics.effect.consumer_goods=Bens de Consumo
+ui.politics.effect.no_change=Nenhuma Mudança
+
+# Military Tab
+ui.military.unit_composition=Editor de Composição de Unidade
+ui.military.live_unit_editor=Edição Ativa de Unidade
+ui.military.unit_types=Tipos de Unidade
+ui.military.selected_fmt=Selecionado (%d)
+ui.military.composition=Composição
+ui.military.no_units=Nenhuma unidade selecionada.
+ui.military.composition_goals_fmt=Objetivos de Composição  (%d unidade%s)
+ui.military.goal=Objetivo
+ui.military.sync_all=Sincronizar Todos
+ui.military.select_prompt=Selecionar um tipo de unidade da lista, ou selecionar unidades no mapa e pressionar C.
+ui.military.add_family=+ Adicionar Família
+
+# Sortie Tab
+ui.sortie.airborne=AEROTRANSPORTADO
+ui.sortie.planned=PLANEJADO
+ui.sortie.title_fmt=Incursão #%d [%s]
+ui.sortie.aircraft_assigned=Aeronave Designada
+ui.sortie.none_assigned=Nenhuma designada
+ui.sortie.add_aircraft=Adicionar Aeronave
+ui.sortie.remove_aircraft=Remover Aeronave
+ui.sortie.select_aircraft=Selecionar Tipo de Aeronave
+ui.sortie.no_aircraft_avail=Nenhuma Aeronave Disponível
+ui.sortie.mission_label=Missão
+ui.sortie.target_label=Alvo
+ui.sortie.no_target_set=Nenhum alvo definido
+ui.sortie.set_target=Definir alvo no mapa
+ui.sortie.click_map=Clicar no mapa...
+ui.sortie.clear=Limpar
+ui.sortie.altitude=Altitude
+ui.sortie.air_radius=Raio de Alcance
+ui.sortie.mission_strength=Força da Missão
+ui.sortie.org_efficiency=Eficiência de Organização
+ui.sortie.large_batch=(PENALIDADE DE GRANDE LOTE)
+ui.sortie.low_fuel=BAIXO COMBUSTÍVEL
+ui.sortie.slowest_aircraft=Aeronave menos veloz: %.6f u/s
+ui.sortie.time_airborne=Tempo de Voo: %.0f s
+ui.sortie.dismiss_recall=Dispensar (Recolher Aeronaves)
+ui.sortie.close=Fechar
+ui.sortie.launch_sortie=LANÇAR INCURSÃO
+ui.sortie.need_aircraft=Requer aeronaves e alvos para lançar
+ui.sortie.launch_idle=Lançar sem Alvo (Patrulha Passiva)
+
+# Sortie| Aircraft Tooltip
+ui.sortie.tooltip.alt=Alt
+ui.sortie.tooltip.mission=Missão
+ui.sortie.tooltip.strength=Força
+ui.sortie.tooltip.efficiency=Eficiência
+ui.sortie.tooltip.fuel_fmt=Combustível: %.0f / %.0f (%.0f%%)
+ui.sortie.tooltip.helicopter=(Helicóptero)
+ui.sortie.tooltip.phase=Fase
+ui.sortie.tooltip.state=Estado
+
+# Sortie — Flight Phases
+ui.sortie.phase.transit=Trânsito
+ui.sortie.phase.racetrack=Pista
+ui.sortie.phase.figure8=Figura-8
+ui.sortie.phase.ingress=Entrada
+ui.sortie.phase.egress=Saída
+ui.sortie.phase.weave=Weave # Ainda preciso procurar uma tradução correta
+ui.sortie.state.transit=Trânsito
+ui.sortie.state.on_station=Em Posição
+ui.sortie.state.rtb=RTB
+
+# City Tab| Construction Buttons
+ui.button.agri_center=Centro Agrícola
+ui.button.civ_industry=Indústria Civil
+ui.button.airbase=Base Aérea
+
+# Unit Creation Tab
+ui.window.unit_creator=Criador de Unidade
+
+# End Game
+ui.endgame.title=VITÓRIA
+ui.endgame.subtitle=Todos os objetivos foram atingidos. A nação permanece íntegra.
+
+# HQ Assignment
+ui.building.hq_name=QG
+ui.building.hq_assign=Designar QG
+ui.building.hq_unassign=Desmarcar
