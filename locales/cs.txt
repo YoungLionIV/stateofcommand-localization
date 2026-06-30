@@ -1,0 +1,833 @@
+# -------------------------------------
+# State of Command: Czech locale
+# Format: key=value
+# Lines starting with # are comments
+# -------------------------------------
+
+# Main Menu
+menu.button.start_game=Začít Hru
+menu.button.profile=Profil
+menu.button.settings=Nastavení
+menu.button.quit=Odejít
+menu.button.credits=Titulky
+menu.intro.presented_by=Přináší vám
+menu.intro.layth_issam_elzaim=L a y t h  I s s a m  E l  Z a i m
+
+# Credits Screen
+menu.credits.line1=Hra od Layth Issam El Zaim
+menu.credits.line2=(Jediný Vývojář a Tvůrce)
+# to make space between credits do the key then leave value blank like so
+menu.credits.line3=
+#Then I would like for all contributors to put their credit appropriately
+#now add all of yours here and all translators try to keep your locales up to date with the credits as well, you can even put the names in the respective language.
+menu.credits.line5=Hebrejský překlad udělal adar albajari (doctor4rats)
+menu.credits.line5=
+menu.credits.line6=Řecký Překlad udělal by DLRGR202O
+
+menu.credits.click_to_return=Kliknutím kamkoliv se vrátíte
+
+# Settings
+ui.settings.title=Nastavení
+ui.settings.tab.graphics=Grafika
+ui.settings.tab.language=Jazyk
+ui.settings.tab.game_visuals=Vzhled Hry
+
+ui.settings.resolution=Rozlišení
+ui.settings.window_mode=Režim Zobrazení
+
+ui.settings.language=Jazyk
+
+# UI Manager| Flag Bar
+ui.button.diplomacy=Diplomacie
+ui.button.politics=Politika
+ui.button.economy=Ekonomika
+ui.button.military=Armáda
+
+# UI Manager| Country Select
+ui.button.play_as=Hrát Za
+
+# UI Manager| Settings
+ui.window.settings=Nastavení
+ui.settings.secondary_icons=Použít Sekundární Ikony Jednotek
+ui.settings.secondary_aircraft_icons=Použít Sekundární Ikony Letadel
+ui.settings.nato_aircraft_coloring=Letadlo v Barvách NATO (Bez Pozadí)
+ui.settings.flag_zoom_out=Zobrazit Vlajku Při Oddálení (Jednotky)
+ui.settings.nation_overlay=Vrstva Národů (N)
+ui.settings.always_flag=Vždy Zobrazit Vlajku Na Jednotkách (F)
+ui.settings.unit_size=Velikost Jednotky
+
+# UI Manager| City tab (single city)
+ui.label.pop=Pop: %d
+ui.label.buildings=Budovy:
+ui.label.no_buildings=Žádné Budovy
+ui.label.construct=Stavět:
+ui.button.factory=Továrna
+ui.button.military_hq=Vojenské HQ
+ui.button.depot=Sklad
+ui.button.oil_extractor=Těžba Ropy
+ui.button.refinery=Rafinérie
+
+# UI Manager| City Tab (multiple cities)
+ui.label.cities_selected=%zu vybraná města
+ui.label.total_buildings=Celkoví Počet Budov:
+ui.label.no_buildings_selected=Žádné budovy ve vybraných městech
+ui.button.create_units=Vytvořit Jednotky
+ui.button.construct_buildings=Vytvořit budovy
+
+# UI Manager| Building Tab
+ui.building.industrial_factory=Průmyslová Továrna
+ui.building.production_lines=Výrobní Linky:
+ui.building.inventory=Inventář:
+ui.building.no_items=Žádné Předměty
+ui.button.add_production_line=Přidat Výrobní Linku
+ui.building.military_hq_title=Vojenské HQ
+ui.button.spawn_unit=Spawnout Jednotku
+ui.building.supply_depot=Sklad Zásob
+ui.building.stored_equipment=Uložené Vybavení:
+ui.label.empty=Prázdný
+
+# UI Manager| Unit Creation Tab
+ui.label.select_unit_type=Vyberte Typ Jednotky:
+ui.button.cancel=Zrušit
+
+# UI Manager| Unit Tooltip
+ui.tooltip.no_equipment=Žádné Vybavení
+ui.tooltip.morale=Morálka: %.1f
+ui.tooltip.organization=Organizace: %.2f
+ui.tooltip.retreat_behavior=Chování Při Ústupu: %s
+ui.retreat.normal=Normální
+ui.retreat.hold_position=Držet Pozici
+ui.retreat.fallback=Stáhnout Se
+ui.tooltip.forming=FORMOVÁNÍ: %.0f%%
+ui.tooltip.assigned_to_hq=Přirazeno k: %s
+ui.tooltip.right_click_for_hq=Kliknutím Pravým Tlačítkem Přiřadíte K HQ
+ui.tooltip.subordinates=Podřízené Jednotky: %d
+ui.tooltip.hq_org_bonus=Bonus K Organizaci Od HQ: +%.0f%%
+
+# UI Manager| HQ Assignment
+ui.hq.assigning=Přiřazování
+ui.hq.assign_mode=Kliknutím Na Jednotku HQ Ji Přiřadíte
+ui.hq.assign_cancel=Kliknutím Pravým Tlačítkem Nebo Klávesou Esc Zrušíte
+ui.hq.assigning_factory=Přiřazování Továrny
+
+# UI Manager| Factory Tab
+ui.factory.no_hq_assigned=Není Přiřazeno Žádné HQ -- Kliknutím Pravým Tlačítkem Přiřadíte
+ui.factory.priority_tooltip=Automatické Nastavení HQ Vynechá Tuto Výrobní Linku
+ui.factory.priority_badge=[PRIORITNÍ]
+
+# UI Manager| Invasion Mode
+ui.invasion.mode_active=INVAZNÍ REŽIM AKTIVOVÁN
+ui.invasion.draw_line=Nakreslete Ofenzivní Linii Pro Plánování
+ui.invasion.toggle_off=Stisknutím Klávesy 'I' Režim Vypnete
+ui.button.execute=SPUSTIT
+
+# UI Manager| Building Creation Tab
+ui.window.construct_building=Postavit Budovu
+ui.label.construct_building=Postavit Budovu:
+
+# UI Manager| Diplomacy tab
+ui.diplomacy.your_nation=Váš Národ:
+ui.diplomacy.status_ally=SPOJENEC
+ui.diplomacy.status_war=VE VÁLCE
+ui.diplomacy.status_neutral=Neutrální
+ui.diplomacy.button_ally=Vyhlásit Alianci
+ui.diplomacy.button_war=Vyhlásit Válku
+ui.diplomacy.button_break_alliance=Zničit Alianci
+ui.diplomacy.button_peace=Vyhlásit Mír
+ui.diplomacy.info_tooltip=Kliknutím Pravým Tlačítkem Na Mapu Zavřete
+ui.diplomacy.relation_value=Vztahy
+ui.diplomacy.active_agreements=Aktivní Dohody
+ui.diplomacy.no_agreements=Žádné aktivní dohody
+ui.diplomacy.propose_agreement=Navrhnout Dohodu
+ui.diplomacy.agreement.air_support=Dohoda O Letecké Podpoře
+ui.diplomacy.agreement.equipment_procurement=Zajištění Vybavení
+ui.diplomacy.agreement.satellite_intel=Satelitní Zpravodajství
+ui.diplomacy.agreement.military_assistance=Vojenská Pomoc
+ui.diplomacy.agreement.financial_aid=Finanční Pomoc
+ui.diplomacy.button.propose_air_support=Navrhnout Leteckou Dohodu
+ui.diplomacy.button.propose_equipment=Navrhnout Zajištění Vybavení
+ui.diplomacy.button.propose_satellite=Požádat O Satelitní Zpravodajství
+ui.diplomacy.button.propose_military_access=Navrhnout Vojenský Přístup
+ui.diplomacy.button.request_aid=Požádat O Finanční Pomoc
+ui.diplomacy.button.purchase_equipment=Nakoupit Vybavení
+ui.diplomacy.button.emergency_aid=Požádat O Nouzovou Vojenskou Pomoc
+ui.diplomacy.button.terminate=Ukončit
+ui.diplomacy.purchase.title=Zajištění Vybavení
+ui.diplomacy.purchase.price_factor=Cenový Faktor
+ui.diplomacy.purchase.filter_hint=Filtrovat Vybavení...
+ui.diplomacy.purchase.qty=Množství
+ui.diplomacy.purchase.buy=Koupit
+ui.diplomacy.purchase.no_equipment=Cíl Nemá Žádné Dostupné Vybavení
+ui.diplomacy.button.declare_ally=Vyhlásit Alianci
+ui.diplomacy.button.declare_war=Vyhlásit Válku
+ui.diplomacy.button.break_alliance=Zničit Alianci
+ui.diplomacy.button.declare_peace=Uzavřít Mír
+
+# UI Manager| Politics tab
+ui.politics.political_support=Politická Podpora
+ui.politics.support_breakdown=Rozbor Podpory
+ui.politics.civilian_stability=Civilní Stabilita
+ui.politics.victory_progress=Postup K Vítězství
+ui.politics.active_policies=Aktivní Politika
+ui.politics.effects=Efekty:
+ui.politics.conscription=Branná Povinnost
+ui.politics.economy=Ekonomika
+ui.politics.security=Bezpečnost
+
+# UI Manager| Economy tab
+ui.economy.treasury=Státní Pokladna
+ui.economy.income=Příjmy
+ui.economy.expenses=Výdaje
+ui.economy.net=Čistý Zisk
+ui.economy.urban_taxation=Městské Zdanění
+ui.economy.oil_exports=Export Ropy
+ui.economy.foreign_aid=Zahraniční Pomoc
+ui.economy.total_income=Celkové Příjmy
+ui.economy.military_upkeep=Údržba Armády
+ui.economy.building_upkeep=Údržba Budov
+ui.economy.equip_purchases=Nákup Vybavení
+ui.economy.total_expenses=Celkové Výdaje
+ui.economy.national_resources=Národní Zásoby Surovin
+ui.economy.crude_oil=Surová Ropa
+ui.economy.fuel=Palivo
+ui.economy.iron_ore=Železná Ruda
+ui.economy.steel=Ocel
+ui.economy.food=Jídlo
+ui.economy.consumer_goods=Spotřební Zboží
+
+# Editor| Top Bar
+editor.btn.provinces=Provincie
+editor.btn.cities=Města
+editor.btn.urban=Městské Oblasti
+editor.btn.roads=Cesty
+editor.btn.buildings=Budovy
+editor.btn.units=Jednotky
+editor.btn.nations=Národy
+editor.btn.draw_province=Kreslit Provincii
+editor.btn.definitions=Definice
+editor.btn.ref=+ Ref
+editor.tooltip.render_settings=Nastavení Vykreslování
+editor.label.modified=[UPRAVENO]
+editor.label.no_map=Není Načtena Žádná Mapa — Otevřete Prohlížeč Zdrojů Pro Načtení Sady Map
+
+# Editor| Resource Browser
+editor.window.resource_browser=Prohlížeč Zdrojů
+editor.tab.maps=Mapy
+editor.tab.units=Jednotky
+editor.tab.flags=Vlajky
+editor.btn.refresh=Obnovit
+editor.btn.load_map=Načíst Mapu
+editor.btn.save_map=Uložit Mapu
+editor.btn.load_unit_set=Načíst Sadu Jednotek
+editor.btn.save_flags=Uložit Vlajky
+editor.btn.load_flag_set=Načíst Sadu Vlajek
+editor.btn.duplicate=Duplikovat
+editor.btn.save_to=Uložit Do...
+editor.hint.new_set_name=Nový Název Sady...
+editor.btn.create=Vytvořit
+editor.btn.save_all=Uložit Vše (Ctrl+S)
+editor.label.unsaved=Neuložené Změny!
+editor.hint.or_new_name=Nebo Zadejte Nový Název...
+editor.btn.save=Uložit
+
+# Editor| Duplicate / Save To Popups
+editor.popup.duplicate_title=Duplikovat Sadu
+editor.popup.duplicate_format=Duplikovat Sadu %s
+editor.popup.new_name_label=Nový Název
+editor.btn.duplicate_confirm=Duplikovat
+editor.btn.cancel=Zrušit
+editor.popup.save_to_title=Uložit Do Sady
+editor.popup.save_to_format=Uložit Aktuální Data Do Sady %s:
+editor.set_type.map=Mapa
+editor.set_type.unit=Jednotka
+editor.set_type.flag=Vlajka
+
+# Editor| Province Panel
+editor.window.province=Vlastnosti Provincie
+editor.label.province_id=ID Provincie: %d
+editor.input.province_name=Název Provincie
+editor.input.owning_nation=Vlastnící Národ
+editor.input.assign_nation=Přiřadit K Národu
+editor.label.vertices=Vrcholy: %d  (Hranice: %d)
+editor.label.vertex_info=Vrchol #%d  (%.6f, %.6f)
+editor.input.vertex_pos=Pozice
+editor.label.belongs_to=Patří K Provincii: %d (%s)
+editor.input.reassign_id=Přeřadit Pod ID Provincie
+editor.btn.reassign=Přeřadit Vrchol
+editor.btn.remove_vertex=Odebrat Vrchol
+editor.label.interior_vertex=(Vnitřní Vrchol)
+editor.label.min_verts=(Min. 3 Vrcholy)
+editor.label.province_management=Správa Provincií
+editor.btn.stop_adding=Ukončit Přidávání
+editor.btn.add_vertex=Přidat Vrchol
+editor.label.click_boundary=Kliknutím Na Hranici Vložíte
+editor.btn.draw_new_province=Kreslit Novou Provincii
+editor.label.drawing_verts=Kreslení... (%d Vrcholů)
+editor.btn.delete_province=Smazat Tuto Provincii
+
+# Editor| Nation Panel
+editor.window.nation=Vlastnosti Národa
+editor.label.nation_hash=Hash: %u  Provincie: %d
+editor.input.nation_name=Název Národa
+editor.label.no_flag=(Bez Vlajky)
+editor.label.flag_set=Sada Vlajek: %s
+editor.btn.change_flag=Změnit Vlajku...
+editor.label.allies=Spojenci
+editor.btn.add_ally=Přidat Spojence
+editor.label.enemies=Nepřátelé
+editor.btn.add_enemy=Přidat Nepřítele
+editor.label.province_list_header=Seznam Provincií
+editor.label.state_management=Správa Států
+editor.input.new_state_name=Název Nového Státu##newstate
+editor.btn.create_state=Vytvořit Stát
+editor.btn.delete_state=Smazat Tento Stát
+
+# Editor| City Panel
+editor.window.city=Editor Měst
+editor.label.cities_count=Města: %d
+editor.btn.placing_cities=Umísťování Měst...
+editor.btn.place_city=Umístit Město
+editor.label.click_map_place=Kliknutím Na Mapu Umístíte
+editor.label.city_id=Město #%d
+editor.input.city_name=Název
+editor.input.city_state=Stát
+editor.input.city_province=Provincie
+editor.input.population=Populace
+editor.input.lon_lat=Zem. Délka / Šířka
+editor.checkbox.urban_area=Městská Oblast
+editor.label.world_coords=Svět: (%.4f, %.4f)
+editor.btn.delete_city=Smazat Město
+editor.input.filter=Filtr
+
+# Editor| Road Panel
+editor.window.road=Editor Cest
+editor.label.segments=Segmenty: %d
+editor.btn.new_segment=Nový Segment
+editor.label.add_mode=REŽIM PŘIDÁVÁNÍ
+editor.btn.stop=Zastavit
+editor.btn.add_points=Přidat Body
+editor.label.segment_info=Segment #%d (%d Bodů)
+editor.input.point_pos=Pozice Bodu
+editor.btn.delete_point=Smazat Bod
+editor.btn.delete_segment=Smazat Segment
+
+# Editor| Building Panel
+editor.window.building=Editor Budov
+editor.label.buildings_click=Budovy: %d  — Kliknutím Na Mapu Umístíte
+editor.label.building_id=Budova #%d
+editor.input.building_type=Typ
+editor.input.owner_state=Vlastnící Stát
+editor.input.city_assign=Město
+editor.input.building_pos=Pozice
+editor.label.drag_map=Tažením Na Mapě Přesunete
+editor.label.factory_props=Vlastnosti Továrny
+editor.input.throughput=Propustná Kapacita
+editor.input.shipping_threshold=Práh Expedice
+editor.label.production_lines_count=Výrobní Linky: %d
+editor.input.equipment=Vybavení
+editor.input.capacity=Kapacita
+editor.btn.remove=Odebrat
+editor.btn.add_production_line=Přidat Výrobní Linku
+editor.label.depot_props=Vlastnosti Skladiště
+editor.input.max_equipment=Maximální Kapacita Vybavení
+editor.input.max_manpower=Maximální Kapacita Lidské Síly
+editor.label.military_hq=Vojenské HQ
+editor.label.no_additional_props=Žádné Další Vlastnosti
+editor.btn.delete_building=Smazat Budovu
+
+# Editor| Unit Panel
+editor.window.unit=Editor Jednotek
+editor.label.units_click=Jednotky: %d  — Kliknutím Na Mapu Umístíte
+editor.label.unit_id=Jednotka #%d
+editor.input.given_name=Název
+editor.label.given_name_hint=Název Jednotky (Není Vyžadován, Bude Automaticky Vygenerován)
+editor.input.definition=Definice
+editor.checkbox.fully_formed=Plně Zformováno (Vytvořit V Plné Síle)
+editor.btn.generate_name=Automatický Název
+editor.btn.delete_unit=Smazat Jednotku
+
+# Editor| Status Bar
+editor.mode.provinces=Provincie
+editor.mode.cities=Města
+editor.mode.urban_areas=Městské Oblasti
+editor.mode.roads=Cesty
+editor.mode.buildings=Budovy
+editor.mode.units=Jednotky
+editor.mode.nations=Národy
+editor.status.modified= [UPRAVENO]
+editor.status.dropper_active= | KAPÁTKO AKTIVNÍ
+editor.status.add_vertex= | PŘIDAT VRCHOL
+editor.status.no_map=Není Načtena Žádná Mapa
+
+# Editor| Help Overlay
+editor.window.controls=Ovládání
+editor.help.navigation=Navigace
+editor.help.wasd=WASD / Tažení Pravým Tlačítkem: Posun Kamery
+editor.help.scroll=Kolečko Myši: Přiblížení
+editor.help.selection=Výběr
+editor.help.click=Kliknutí: Vybrat / Umístit
+editor.help.shift_click=Shift+Kliknutí: Národ (Režim Provincií)
+editor.help.drag=Tažení: Přesunout Vybrané
+editor.help.escape=Escape: Zrušit Výběr
+editor.help.ctrl_s=Ctrl+S: Uložit Vše
+editor.help.pick=Tlačítko Pipety: Nástroj Kapátko
+
+# Editor| Dropper Overlay
+editor.dropper.click_province=Kliknutím Na Provincii Vyberete Stát
+
+# Editor| Dropper Button
+editor.btn.picking=Vybírání...
+editor.btn.pick=Vybrat
+editor.tooltip.dropper=Kliknutím Na Provincii Na Mapě Vyberete Její Vlastnící Stát
+
+# Editor| Nation/Province Combo Filters
+editor.hint.search_nations=Hledat Národy...
+editor.hint.search_provinces=Hledat Provincie...
+
+#Editor| Province Creation Panel
+editor.window.draw_province=Kreslit Provincii
+editor.label.click_map_vertices=Kliknutím Na Mapu Umístíte Vrcholy
+editor.label.vertices_placed=Umístěné Vrcholy: %d
+editor.input.create_prov_name=Název##crprov
+editor.input.create_prov_state=Stát##crprov
+editor.btn.undo_last=Zpět Na Předchozí Vrchol
+editor.btn.finish_province=Dokončit Provincii
+editor.label.or_click_first=Nebo Kliknutím Poblíž Prvního Vrcholu (Zelený Bod) Uzavřete Tvar.
+editor.label.min_3_verts=Pro Dokončení Umístěte Nejméně 3 Vrcholy.
+
+# Editor| Reference Overlay Panel
+editor.window.ref_image=Vlastnosti Referenčního Obrázku
+editor.btn.delete=Smazat
+editor.btn.unlock=Odemknout
+editor.btn.lock=Zamknout
+editor.btn.hide=Skrýt
+editor.btn.show=Zobrazit
+editor.input.opacity=Neprůhlednost
+editor.input.position=Pozice
+editor.input.size=Velikost (Š/V)
+editor.input.scale=Měřítko
+editor.btn.fit_to_map=Přizpůsobit Mapě
+
+# Editor| Render Settings 
+editor.window.render_settings=Nastavení Vykreslování
+editor.label.tile_textures=Textury Dlaždic
+editor.checkbox.show_tile_textures=Zobrazit Textury Dlaždic
+editor.input.tint_strength=Síla Zabarvení
+editor.label.nation_rendering=Vykreslování Národů
+editor.checkbox.render_by_nation=Vykreslovat Podle Barvy Národa
+editor.checkbox.show_nation_flags=Zobrazit Vlajky Národů
+editor.tooltip.nation_flags=Vykreslit Vlajky Národů Středem Jejich Území
+editor.label.layer_opacities=Průhlednost Vrstev
+editor.input.provinces_opacity=Provincie
+editor.input.roads_opacity=Cesty
+editor.input.city_dots_opacity=Body Měst
+editor.input.urban_areas_opacity=Městské Oblasti
+editor.input.buildings_opacity=Budovy
+editor.input.units_opacity=Jednotky
+editor.btn.reset_all=Resetovat Vše
+
+# Editor| Urban Area Panel
+editor.window.urban=Editor Městských Oblastí
+editor.label.urban_count=Městské Oblasti: %d
+editor.btn.draw_urban=Kreslit Městskou Oblast
+editor.label.drawing_urban=Kreslení... (%d Vrcholů)
+editor.label.urban_id=Městská Oblast #%d  (%d Hraničních Vrcholů)
+editor.input.urban_name=Název
+editor.input.urban_state=Vlastnící Stát
+editor.input.urban_province=Provincie
+editor.input.urban_pop=Populace
+editor.input.filter_urban=Filtr##urban
+
+# Editor| Urban Area Creation Panel
+editor.window.draw_urban=Kreslit Městskou Oblast
+editor.input.create_urban_name=Název##crurban
+editor.input.create_urban_state=Stát##crurban
+editor.btn.finish_urban=Dokončit Městskou Oblast
+
+# Editor| Nation Editor Tab
+editor.window.nation_editor=Editor Národů
+editor.label.nations_count=Národy: %d
+editor.input.filter_nations=Filtr##nations
+editor.label.selected_nation=Vybráno: %s
+editor.input.nation_name_ne=Název Národa##ne
+editor.label.provinces_ne=Provincie##ne
+
+# Editor| Definition Editor 
+editor.window.definition_editor=Editor Definic
+editor.btn.equipment_tab=Vybavení
+editor.btn.units_tab=Jednotky
+editor.btn.save_all_def=Uložit Vše
+editor.btn.close=Zavřít
+editor.label.background_icons=Ikony Pozadí
+
+# Map Events| UI
+ui.event.expires=Vyprší
+ui.event.effect_stability=Stabilita
+ui.event.effect_political=Politická Podpora
+ui.event.effect_treasury=Státní Pokladna
+ui.event.chance_outcome=Možný Výsledek
+
+# Map Events| Anti-Government Protests
+event.protest.title=Protivládní Protesty
+event.protest.desc=V Oblasti %s Vypukly Demonstrace.
+event.protest.negotiate=Vyjednávat
+event.protest.crack_down=Zasáhnout Silou
+event.protest.ignore=Ignorovat
+
+# Map Events| Corruption Scandal
+event.corruption.title=Korupční Skandál
+event.corruption.desc=V Oblasti %s Byl Odhalen Korupční Skandál.
+event.corruption.investigate=Vyšetřit
+event.corruption.cover_up=Utajit
+
+# Map Events| Prominent Defection
+event.defection.title=Významná Dezerce
+event.defection.desc=Z Oblasti %s Zběhl Vysoce Postavený Představitel.
+event.defection.amnesty=Nabídnout Amnestii
+event.defection.denounce=Odsoudit Zrádce
+
+# Map Events| Religious Leaders Statement
+event.religious.title=Prohlášení Duchovních Vodců
+event.religious.desc=Duchovní Vůdci Vydali Prohlášení.
+event.religious.support=Podpořit Prohlášení
+event.religious.reject=Odmítnout Prohlášení
+event.religious.neutral=Zůstat Neutrální
+
+# Map Events| National Reconciliation
+event.reconciliation.title=Návrh Na Národní Usmíření
+event.reconciliation.desc=Byl Předložen Návrh Na Národní Usmíření.
+event.reconciliation.accept=Přijmout Rozhovory
+event.reconciliation.reject=Odmítnout Rozhovory
+
+# Map Events| Local Council Autonomy
+event.autonomy.title=Místní Rada Vyhlásila Autonomii
+event.autonomy.desc=Místní Rada V Oblasti %s Vyhlásila Autonomii.
+event.autonomy.recognize=Uznat
+event.autonomy.negotiate=Vyjednávat
+event.autonomy.suppress=Potlačit
+
+# Map Events| Refugee Crisis
+event.refugee.title=Uprchlická Krize
+event.refugee.desc=Poblíž Oblasti %s Se Rozvíjí Uprchlická Krize.
+event.refugee.assistance=Poskytnout Pomoc
+event.refugee.military=Upřednostnit Vojenské Potřeby
+
+# Map Events| Local Tribal Alliance
+event.tribal.title=Místní Kmenová Aliance
+event.tribal.desc=Místní Kmenová Aliance Nabídla Podporu V Oblasti %s.
+event.tribal.support=Nabídnout Podporu
+event.tribal.ignore=Ignorovat
+
+# Settings| Window Mode Labels
+ui.settings.window_mode.windowed=V Okně
+ui.settings.window_mode.borderless=Bez Okrajů
+ui.settings.window_mode.fullscreen=Celá Obrazovka
+
+# Settings| Notes
+ui.settings.note.restart_safe=Tato Nastavení Lze Bezpečně Měnit Během Hraní.
+ui.settings.note.lang_live=Změny Jazyka Se Projeví Okamžitě.
+
+# Settings| Dev
+ui.settings.reveal_all_units=Odkrýt Všechny Jednotky (Dev)
+
+# City Tooltip
+ui.city.tooltip.population=Populace
+ui.city.tooltip.stability=Stabilita
+ui.city.tooltip.food_supply=Zásobování Jídlem
+ui.city.tooltip.food_stockpile=Zásoby Jídla
+ui.city.tooltip.consumer_goods=Spotřební Zboží
+ui.city.tooltip.cg_stockpile=Zásoby Spotřebního Zboží
+ui.city.tooltip.manpower_pool=Rezervy Lidské Síly
+ui.city.tooltip.building_health=Stav Budov
+ui.city.tooltip.damaged=Poškozeno
+ui.city.tooltip.depot_supply=Zásobování Skladiště
+ui.city.tooltip.employment=Zaměstnanost
+
+# Building| Construction
+ui.building.construction_site=Staveniště
+ui.building.building_label=Budova
+ui.building.family_label=Rodina
+ui.building.progress_label=Postup
+ui.building.remaining_label=Zbývá
+ui.building.cancel_construction=Zrušit Výstavbu
+
+# Building| Tooltips
+ui.building.tooltip.health=Stav
+ui.building.tooltip.output_inventory=Výstupní Inventář
+ui.building.tooltip.steel=Ocel
+ui.building.tooltip.supplies_stored=Uložené Zásoby
+ui.building.tooltip.manpower_stored=Lidská Síla
+ui.building.tooltip.fuel=Palivo
+ui.building.tooltip.crude_oil=Surová Ropa
+ui.building.tooltip.iron_ore=Železná Ruda
+ui.building.tooltip.aircraft_stored=Uložená Letadla
+ui.building.tooltip.food=Jídlo
+ui.building.tooltip.consumer_goods_stored=Uložené Spotřební Zboží
+
+# Building| Factory
+ui.building.no_family_assigned=NENÍ PŘIŘAZENA ŽÁDNÁ RODINA
+ui.building.set_family=Nastavit Rodinu
+ui.building.change=Změnit
+ui.building.thr=THR (Práh)
+ui.building.hq_label=HQ
+ui.building.hq_none=ŽÁDNÉ
+ui.building.no_families=Nejsou Dostupné Žádné Rodiny
+ui.building.none_all_families=(Žádné - Všechny Rodiny)
+ui.building.factories_assigned=Přiřazené Továrny
+
+# Building| Individual Buildings (Headers)
+ui.building.oil_extractor=Ropný Vrt
+ui.building.refinery=Rafinerie
+ui.building.agri_center=Zemědělské Centrum
+ui.building.iron_mine=Železný Důl
+ui.building.heavy_industry=Těžký Průmysl
+ui.building.civilian_industry=Civilní Průmysl
+ui.building.airbase=Letecká Základna
+ui.building.arms_factory=Zbrojovka
+ui.building.vehicle_factory=Továrna Na Vozidla
+ui.building.artillery_factory=Továrna Na Dělostřelectvo
+
+# Building| Oil Extractor
+ui.building.oil.rate_ship=Rychlost: %.1f bbl/s  |  Expedovat Při: %d
+ui.building.oil.stored=Uloženo: %d / %d Barelů
+ui.building.oil.next_barrel=Další Barel: %.0f%%
+ui.building.oil.dispatching=Expedice Zásilky...
+ui.building.oil.filling=Plnění (%d/%d)
+
+# Building| Refinery
+ui.building.refinery.rate_ship=Rychlost: %.1f Bbl/s  |  Expedovat Při: %d
+ui.building.refinery.crude_stored=Surová Ropa: %d / %d
+ui.building.refinery.fuel_stored=Palivo: %d / %d
+ui.building.refinery.no_crude=Žádná Surová Ropa - Nečinné
+ui.building.refinery.dispatching=Expedice Paliva...
+ui.building.refinery.refining=Rafinace...
+
+# Building| Agricultural Center
+ui.building.agri.rate_ship=Rychlost: %.1f Jídla/s  |  Expedovat Při: %d
+ui.building.agri.stored=Uloženo: %d / %d Jídla
+ui.building.agri.dispatching=Expedice Zásilky Jídla...
+ui.building.agri.harvesting=Sklizeň (%d/%d)...
+
+# Building| Iron Mine
+ui.building.iron.rate_ship=Těžba: %.1f Tun/s  |  Expedovat Při: %d
+ui.building.iron.stored=Uloženo: %d / %d Železné Rudy
+ui.building.iron.dispatching=Expedice Železné Rudy...
+ui.building.iron.mining=Těžba (%d/%d)...
+
+# Building| Heavy Industry
+ui.building.heavy.rate_ship=Konverze: %.1f Tun/s  |  Expedovat Při: %d
+ui.building.heavy.ore_input=Vstup Železné Rudy: %d / %d
+ui.building.heavy.steel_output=Výstup Oceli: %d  (Expedovat Při %d)
+ui.building.heavy.waiting_ore=Čekání Na Železnou Rudu...
+ui.building.heavy.dispatching=Expedice Oceli...
+ui.building.heavy.smelting=Tavení...
+
+# Building| Civilian Industry
+ui.building.civ.rate_ship=Rychlost: %.1f Zboží/s  |  Expedovat Při: %d
+ui.building.civ.buffer_stored=Zásobník: %d Zboží  |  Uloženo: %d / %d
+ui.building.civ.dispatching=Expedice Spotřebního Zboží...
+ui.building.civ.producing=Výroba (%d/%d)...
+ui.building.civ.connected_urban=Připojené Městské Oblasti
+ui.building.civ.no_urban=V Národě Nejsou Žádné Městské Oblasti
+ui.building.civ.urban_entry=  %s (%.0f%%, m=%d, %.0fkm)
+ui.building.civ.show_less=Zobrazit Méně
+ui.building.civ.show_all=Zobrazit Vše
+ui.building.civ.nation_status=Stav Národa
+ui.building.civ.avg_supply=  Prům. Zásobování: %.0f%%  |  Nejnižší: %.0f%%  |  Městské Oblasti: %d
+ui.building.civ.rate_demand=  Vaše Rychlost: %.1f/s  |  Celková Poptávka: %.1f/s
+ui.building.civ.tooltip=Spotřební Zboží Zvyšuje Civilní Stabilitu A Snižuje Nepokoje.
+
+# Building| Depot
+ui.building.depot.equipment=Vybavení: %d / %d
+ui.building.depot.manpower=Lidská Síla: %d / %d
+ui.building.depot.crude=Surová Ropa: %d / %d
+ui.building.depot.fuel=Palivo: %d / %d
+
+# Building| Airbase
+ui.building.airbase.aircraft=Letadla: %d / %d (%d Přiřazeno)
+ui.building.airbase.stationed=Umístěná Letadla
+ui.building.airbase.no_aircraft=Nejsou Zde Umístěna Žádná Letadla
+ui.building.airbase.sorties=Mise
+ui.building.airbase.no_sorties=Nejsou Plánovány Žádné Mise
+ui.building.airbase.new_sortie=+ Nová Mise
+ui.building.airbase.airborne=[VE VZDUCHU]
+ui.building.airbase.planned=[PLÁNOVÁNO]
+ui.building.airbase.sortie_entry=Mise #%d - %s
+ui.building.airbase.aircraft_count=Letadla: %d  |  Výška: %.0f ft
+ui.building.airbase.target=Cíl: (%.4f, %.4f)
+ui.building.airbase.no_target=Není Nastaven Žádný Cíl
+ui.building.airbase.edit=Upravit
+ui.building.airbase.dismiss=Zrušit
+ui.building.airbase.launch=Spustit
+ui.building.airbase.x_button=X
+ui.building.airbase.assign_hq=Přiřadit HQ
+ui.building.airbase.unassign=Zrušit Přiřazení HQ
+ui.building.airbase.available_fmt=(%d Dostupných)
+
+# Building| Creation Tab
+ui.building.create.select_type=Vyberte Typ Budovy
+ui.building.create.click_to_place=Kliknutím Levým Tlačítkem Na Mapu Umístíte.
+ui.building.create.press_b=Stisknutím Klávesy B Nebo Zrušit Zavřete.
+ui.building.create.arms_factory=Zbrojovka
+ui.building.create.military_hq=Vojenské HQ
+ui.building.create.depot=Skladiště
+ui.building.create.oil_extractor=Ropný Vrt
+ui.building.create.refinery=Rafinerie
+ui.building.create.agri_center=Zemědělské Centrum
+ui.building.create.iron_mine=Železný Důl
+ui.building.create.heavy_industry=Těžký Průmysl
+ui.building.create.vehicle_factory=Továrna Na Vozidla
+ui.building.create.artillery_factory=Továrna Na Dělostřelectvo
+ui.building.create.civilian_industry=Civilní Průmysl
+ui.building.create.cancel=Zrušit
+
+# Unit Tooltips
+ui.tooltip.unknown_unit=Neznámá Jednotka
+ui.tooltip.unknown=Neznámý
+ui.tooltip.fuel_status=Palivo: %.0f%% (%+.1f/t)  Postih: %.0f%%
+ui.tooltip.road_health=Stav Cest: %.0f%% (-%.0f%% Rychlost)
+
+# Infantry / Road Health Label
+ui.label.road_health=Stav Cest
+ui.label.health=Kondice
+
+# Economy Tab
+ui.economy.treasury_label=Státní Pokladna
+ui.economy.income_label=Příjmy
+ui.economy.expenses_label=Výdaje
+ui.economy.net_label=Čistý Zisk
+ui.economy.total_income_fmt=Celkové Příjmy:      +%.1f /s
+ui.economy.total_expenses_fmt=Celkové Výdaje:    -%.1f /s
+ui.economy.net_fmt=Čistý Zisk:               %+.1f /s
+ui.economy.net_tooltip_fmt=Míra Čistého Zisku. Při Této Rychlosti Se Státní Pokladna Během Následující Minuty %s O %.0f.
+ui.economy.net_grow=Zvýší
+ui.economy.net_shrink=Sníží
+ui.economy.urban_tax_fmt=Městské Zdanění:    +%.1f /s
+ui.economy.oil_exports_fmt=Export Ropy:       +%.1f /s
+ui.economy.foreign_aid_fmt=Zahraniční Pomoc:   +%.1f /s
+ui.economy.military_upkeep_fmt=Údržba Armády:   -%.1f /s
+ui.economy.building_upkeep_fmt=Údržba Budov:   -%.1f /s
+ui.economy.equip_purchases_fmt=Nákup Vybavení:  -%.1f /s
+ui.economy.resources_label=Národní Zásoby Surovin
+ui.economy.crude_oil_fmt=Surová Ropa:        %d
+ui.economy.fuel_fmt=Palivo:             %d
+ui.economy.iron_ore_fmt=Železná Ruda:         %d
+ui.economy.steel_fmt=Ocel:            %d
+ui.economy.food_fmt=Jídlo:             %d
+ui.economy.consumer_goods_fmt=Spotřební Zboží:   %d
+
+# Economy| Tooltips
+ui.economy.tooltip.tax=Příjmy Z Daní Od Městského Obyvatelstva Pod Vaší Kontrolou.\nCca 1 Do Pokladny/s Na Každých 1000 Občanů.
+ui.economy.tooltip.oil=Příjmy Z Exportu Přebytečné Surové Ropy\n(Produkce Přesahující Domácí Rafinerie + Spotřebu Paliva Jednotek).\nPřebytek 1 Barelu/s = 0,5 Do Pokladny/s.
+ui.economy.tooltip.aid=Finanční Pomoc Od Jiných Národů\nNa Základě Aktivních Dohod O Finanční Pomoci.
+ui.economy.tooltip.military_upkeep=Údržba Vybavení (0,5%% Z Výrobní Ceny/s Za Kus)\n+ Žold Posádky (0,5/s Za Jednotku).
+ui.economy.tooltip.building_upkeep=Náklady Na Údržbu Všech Budov.\nTovárny: 1,0/s, HQ: 2,0/s, Sklady: 0,5/s,\nRopa/Rafinerie/Doly/Těžký Průmysl: 1,5/s,\nZemědělství: 0,5/s, Civilní Průmysl: 0,3/s, Letecká Základna: 3,0/s.
+ui.economy.tooltip.equip_purchases=Amortizované Náklady Na Vybavení Nakoupené\nOd Jiných Národů Prostřednictvím Dohod O Zajištění Vybavení.
+
+# Politics Tab
+ui.politics.political_support_label=Politická Podpora
+ui.politics.civilian_stability_label=Civilní Stabilita
+ui.politics.victory_progress_label=Postup K Vítězství
+ui.politics.active_policies_label=Aktivní Politika
+ui.politics.objectives_label=Cíle
+ui.politics.conscription_label=Branná Povinnost
+ui.politics.economy_label=Ekonomika
+ui.politics.security_label=Bezpečnost
+ui.politics.hold_until_fmt=Udržet Do: %04d-%02d-%02d
+ui.politics.elite=Elita
+ui.politics.military=Armáda
+ui.politics.government=Vláda
+ui.politics.urban_civilian=Městské Obyvatelstvo
+
+# Politics| Policy Effects
+ui.politics.effects_on_selection=Efekty Na Výběr
+ui.politics.effect.elite=Elita
+ui.politics.effect.military=Armáda
+ui.politics.effect.government=Vláda
+ui.politics.effect.urban_civilian=Městské Obyvatelstvo
+ui.politics.effect.stability=Stabilita
+ui.politics.effect.manpower=Lidská Síla
+ui.politics.effect.factory_output=Výkon Továrn
+ui.politics.effect.consumer_goods=Spotřební Zboží
+ui.politics.effect.no_change=Bez Změny
+
+# Military Tab
+ui.military.unit_composition=Editor Složení Jednotek
+ui.military.live_unit_editor=Editor Živých Jednotek
+ui.military.unit_types=Typy Jednotek
+ui.military.selected_fmt=Vybráno (%d)
+ui.military.composition=Složení
+ui.military.no_units=Nejsou Vybrány Žádné Jednotky.
+ui.military.composition_goals_fmt=Cíle Složení  (%d Jednotek%s)
+ui.military.goal=Cíl
+ui.military.sync_all=Synchronizovat Vše
+ui.military.select_prompt=Vyberte Typ Jednotky Ze Seznamu, Nebo Vyberte Jednotky Na Mapě A Stiskněte Klávesu C.
+ui.military.add_family=+ Přidat Rodinu
+
+# Sortie Tab
+ui.sortie.airborne=VE VZDUCHU
+ui.sortie.planned=PLÁNOVÁNO
+ui.sortie.title_fmt=Mise #%d [%s]
+ui.sortie.aircraft_assigned=Přiřazená Letadla
+ui.sortie.none_assigned=Žádná Nepřiřazena
+ui.sortie.add_aircraft=Přidat Letadlo
+ui.sortie.remove_aircraft=Odebrat Letadlo
+ui.sortie.select_aircraft=Vybrat Typ Letadla
+ui.sortie.no_aircraft_avail=Žádná Letadla Nejsou Dostupná
+ui.sortie.mission_label=Mise
+ui.sortie.target_label=Cíl
+ui.sortie.no_target_set=Není Nastaven Žádný Cíl
+ui.sortie.set_target=Nastavit Cíl Na Mapě
+ui.sortie.click_map=Klikněte Na Mapu...
+ui.sortie.clear=Vymazat
+ui.sortie.altitude=Výška
+ui.sortie.air_radius=Letecký Dosah
+ui.sortie.mission_strength=Bojeschopnost Mise
+ui.sortie.org_efficiency=Efektivita Organizace
+ui.sortie.large_batch=(Postih Za Velkou Skupinu)
+ui.sortie.low_fuel=MÁLO PALIVA
+ui.sortie.slowest_aircraft=Nejpomalejší Letadlo: %.6f u/s
+ui.sortie.time_airborne=Čas Ve Vzduchu: %.0f s
+ui.sortie.dismiss_recall=Zrušit (Povolat Letadla Zpět)
+ui.sortie.close=Zavřít
+ui.sortie.launch_sortie=SPUSTIT MISI
+ui.sortie.need_aircraft=Ke Spuštění Je Nutné Letadlo A Cíl
+ui.sortie.launch_idle=Spustit Bez Cíle (Hlídkování)
+
+# Sortie| Aircraft Tooltip
+ui.sortie.tooltip.alt=Výška
+ui.sortie.tooltip.mission=Mise
+ui.sortie.tooltip.strength=Bojeschopnost
+ui.sortie.tooltip.efficiency=Efektivita
+ui.sortie.tooltip.fuel_fmt=Palivo: %.0f / %.0f (%.0f%%)
+ui.sortie.tooltip.helicopter=(Vrtulník)
+ui.sortie.tooltip.phase=Fáze
+ui.sortie.tooltip.state=Stav
+
+# Sortie — Flight Phases
+ui.sortie.phase.transit=Přelet
+ui.sortie.phase.racetrack=Racetrack
+ui.sortie.phase.figure8=Osmička
+ui.sortie.phase.ingress=Přílet
+ui.sortie.phase.egress=Odlet
+ui.sortie.phase.weave=Kličkování
+ui.sortie.state.transit=Na Trase
+ui.sortie.state.on_station=Na Pozici
+ui.sortie.state.rtb=Návrat Na Základnu
+
+# City Tab| Construction Buttons
+ui.button.agri_center=Zemědělské Centrum
+ui.button.civ_industry=Civilní Průmysl
+ui.button.airbase=Letecká Základna
+
+# Unit Creation Tab
+ui.window.unit_creator=Tvorba Jednotek
+
+# End Game
+ui.endgame.title=VÍTĚZSTVÍ
+ui.endgame.subtitle=Všechny Cíle Byly Zajištěny. Národ Je Jednotný.
+
+# HQ Assignment
+ui.building.hq_name=HQ
+ui.building.hq_assign=Přiradit HQ
+ui.building.hq_unassign=Zrušit Přiřazení
