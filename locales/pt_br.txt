@@ -9,7 +9,7 @@ menu.button.start_game=Iniciar
 menu.button.profile=Perfil
 menu.button.settings=Configurações
 menu.button.quit=Sair
-menu.intro.presented_by=Apresentado para você por
+menu.intro.presented_by=Oferecido por
 menu.intro.layth_issam_elzaim=L a y t h  I s s a m  E l  Z a i m
 # You can transliterate or get the equivalent of my name in your language, 
 #make sure to do a space between each character that is next to each other, 
@@ -17,7 +17,7 @@ menu.intro.layth_issam_elzaim=L a y t h  I s s a m  E l  Z a i m
 
 # Credits Screen
 menu.credits.line1=Um jogo de Layth Issam El Zaim
-menu.credits.line2=(Desenvolvedor único e criador)
+menu.credits.line2=(Desenvolvedor solo e criador)
 # to make space between credits do the key then leave value blank like so
 menu.credits.line3=
 #Then I would like for all contributors to put their credit appropriately
