@@ -9,11 +9,25 @@ menu.button.start_game=Iniciar
 menu.button.profile=Perfil
 menu.button.settings=Configurações
 menu.button.quit=Sair
-menu.intro.presented_by=Apresentado para você por
+menu.intro.presented_by=Oferecido por
 menu.intro.layth_issam_elzaim=L a y t h  I s s a m  E l  Z a i m
 # You can transliterate or get the equivalent of my name in your language, 
 #make sure to do a space between each character that is next to each other, 
 #and double space where there would normally be 1 space.
+
+# Credits Screen
+menu.credits.line1=Um jogo de Layth Issam El Zaim
+menu.credits.line2=(Desenvolvedor solo e criador)
+# to make space between credits do the key then leave value blank like so
+menu.credits.line3=
+#Then I would like for all contributors to put their credit appropriately
+#now add all of yours here and all translators try to keep your locales up to date with the credits as well, you can even put the names in the respective language.
+menu.credits.line5=Tradução brasileira por Amilton Neves (miltinhosouza-maker)
+menu.credits.line5=
+menu.credits.line6=
+
+menu.credits.click_to_return=Clique aqui para voltar
+
 
 # Settings| NEW STUFF AND THAT'S IT [No other updates past my name and the settings for now]
 ui.settings.title=Configurações
