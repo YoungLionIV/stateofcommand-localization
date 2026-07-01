@@ -10,12 +10,21 @@ menu.button.profile=โปรไฟล์
 menu.button.settings=การตั้งค่า
 menu.button.quit=ออกเกม
 menu.intro.presented_by=นำเสนอโดย
-menu.intro.layth_issam_elzaim=L a y t h  I s s a m  E l  Z a i m
-# You can transliterate or get the equivalent of my name in your language, 
-#make sure to do a space between each character that is next to each other, 
-#and double space where there would normally be 1 space.
+menu.intro.layth_issam_elzaim=ไ ล ธ์  อิ ส ซ า ม  เ อ ล ซ า อิ ม
 
-# Settings| NEW STUFF AND THAT'S IT [No other updates past my name and the settings for now]
+# Credits Screen
+menu.credits.line1= เกมสร้างโดย ไลธ์  อิสซาม  เอลซาอิม
+menu.credits.line2=(สร้างและพัฒนาโดยคนเดียว)
+# to make space between credits do the key then leave value blank like so
+menu.credits.line3=
+#Then I would like for all contributors to put their credit appropriately, for example for translation (which is pretty much everyone except 1):
+menu.credits.line4=ภาษาไทยโดย Jerrymouse 
+menu.credits.line5= 
+#now add all of yours here and all translators try to keep your locales up to date with the credits as well, you can even put the names in the respective language.
+
+menu.credits.click_to_return= กดตรงไหนก็ได้เพื่อย้อนกลับ
+
+# Settings
 ui.settings.title=การตั้งค่า
 ui.settings.tab.graphics=กราฟิก
 ui.settings.tab.language=ภาษา
@@ -27,21 +36,23 @@ ui.settings.window_mode=โหมดหน้าต่าง
 ui.settings.language=ภาษา
 
 # UI Manager| Flag Bar
-ui.button.diplomacy=การทูต
-ui.button.economy=เศรษฐกิจ
-ui.button.unset=Unset
-ui.button.military=การทหาร
+ui.button.diplomacy= การทูต
+ui.button.politics= การเมือง
+ui.button.economy= เศรษฐกิจ
+ui.button.military= การทหาร
 
 # UI Manager| Country Select
-ui.button.play_as=เล่นเป็น
+ui.button.play_as= เล่นเป็น
 
 # UI Manager| Settings
-ui.window.settings=การตั้งค่า
-ui.settings.secondary_icons=ใช้สัญญาลักษณ์ยูนิตที่สอง
-ui.settings.flag_zoom_out=โชว์ธงเมื่อซูมออก(Units)
-ui.settings.nation_overlay=การวางทับประเทศ(N)
+ui.window.settings= การตั้งค่า
+ui.settings.secondary_icons= ใช้สัญลักษณ์ลำดับที่สองของยูนิต
+ui.settings.secondary_aircraft_icons=ใช้สัญลักษณ์ลำดับที่สองของเครื่องบิน
+ui.settings.nato_aircraft_coloring=เครื่องบินสีแบบนาโต้ (ไม่มีพื้นหลัง)
+ui.settings.flag_zoom_out=โชว์ธงเมื่อซูมออก (ยูนิต)
+ui.settings.nation_overlay=ชาติซ้อนทับกัน (N)
 ui.settings.always_flag=โชว์ธงบนยูนิตเสมอ (F)
-ui.settings.unit_size=ขนาดยูนิต
+ui.settings.unit_size= ขนาดยูนิต
 
 # UI Manager| City tab (single city)
 ui.label.pop=ประชากร: %d
@@ -51,6 +62,8 @@ ui.label.construct=การก่อสร้าง:
 ui.button.factory=โรงงาน
 ui.button.military_hq=กองบัญชาการ
 ui.button.depot=คลังสินค้า
+ui.button.oil_extractor= เครื่องสกัดน้ำมัน
+ui.button.refinery= โรงกลั่น
 
 # UI Manager| City Tab (multiple cities)
 ui.label.cities_selected=%zu เมืองที่เลือก
@@ -83,10 +96,25 @@ ui.retreat.normal=ปกติ
 ui.retreat.hold_position=ยันตำแหน่ง
 ui.retreat.fallback=ถอยกลับ
 ui.tooltip.forming=การรวม: %.0f%%
+ui.tooltip.assigned_to_hq= มอบหมายให้ : %s
+ui.tooltip.right_click_for_hq= คลิกขวาเพื่อมอบหมายให้กองบัญชาการ
+ui.tooltip.subordinates= ผู้ใต้บังคับบัญชา: %d
+ui.tooltip.hq_org_bonus= กองบัญชาการโบนัส: +%.0f%%
+
+# UI Manager| HQ Assignment
+ui.hq.assigning=การมอบหมาย
+ui.hq.assign_mode=กดที่สำนักงานใหญ่เพื่อมอบหมาย
+ui.hq.assign_cancel=คลิกขวา หรือ Esc เพื่อปิด
+ui.hq.assigning_factory=การมอบหมายโรงงาน
+
+# UI Manager| Factory Tab
+ui.factory.no_hq_assigned=ไม่มีการมอบหมายจากสำนักงานใหญ่-- คลิกขวาเพื่อมอบหมาย
+ui.factory.priority_tooltip=สำนักงานใหญ่ที่แก้ไขอัตโนมัติจะข้ามเส้นการผลิตนี้
+ui.factory.priority_badge=[ลำดับความสำคัญ]
 
 # UI Manager| Invasion Mode
 ui.invasion.mode_active=โหมดการบุกยึดทำงาน
-ui.invasion.draw_line=วาดเส้นการบุก
+ui.invasion.draw_line=วาดแนวเส้นการบุก
 ui.invasion.toggle_off=กด 'I' เพื่อปิดการใช้งาน
 ui.button.execute=ดำเนินการ
 
@@ -104,6 +132,65 @@ ui.diplomacy.button_war=ประกาศสงคราม
 ui.diplomacy.button_break_alliance=เลิกเป็นพันธมิตร
 ui.diplomacy.button_peace=ประกาศสันติภาพ
 ui.diplomacy.info_tooltip=คลิกขวาที่แผนที่เพื่อปิด
+ui.diplomacy.relation_value= ความสัมพันธ์
+ui.diplomacy.active_agreements=ข้อตกลงร่วมกันที่มีอยู่
+ui.diplomacy.no_agreements=ไม่มีข้อตกลงร่วมกัน
+ui.diplomacy.propose_agreement=เสนอข้อตกลง
+ui.diplomacy.agreement.air_support= ข้อตกลงในการสนับสนุนทางอากาศ
+ui.diplomacy.agreement.equipment_procurement= การจัดซื้ออุปกรณ์
+ui.diplomacy.agreement.satellite_intel= ระบบข่าวกรองดาวเทียม
+ui.diplomacy.agreement.military_assistance= การสนับสนุนทางการทหาร
+ui.diplomacy.agreement.financial_aid= การช่วยเหลือทางการเงิน
+ui.diplomacy.button.propose_air_support=เสนอการสนับสนุนทางอากาศ
+ui.diplomacy.button.propose_equipment=เสนอการจัดซื้ออุปกรณ์
+ui.diplomacy.button.propose_satellite= ร้องขอการสอดแนมทางดาวเทียม
+ui.diplomacy.button.propose_military_access= เสนอการเข้าถึงการทหาร
+ui.diplomacy.button.request_aid= ร้องขอการช่วยเหลือทางการเงิน
+ui.diplomacy.button.purchase_equipment= สั่งซื้ออุปกรณ์
+ui.diplomacy.button.emergency_aid= ร้องขอความช่วยเหลือฉุกเฉินทางทหาร
+ui.diplomacy.button.terminate= ยุติ
+ui.diplomacy.purchase.title=การจัดซื้ออุปกรณ์
+ui.diplomacy.purchase.price_factor= ราคา
+ui.diplomacy.purchase.filter_hint=ตัวกรองอุปกรณ์...
+ui.diplomacy.purchase.qty= จำนวน
+ui.diplomacy.purchase.buy= ซื้อ
+ui.diplomacy.purchase.no_equipment=เป้าหมายไม่มีอุปกรณ์ที่ต้องการ
+ui.diplomacy.button.declare_ally= ปะกาศความเป็นพันธมิตร
+ui.diplomacy.button.declare_war=ประกาศสงคราม
+ui.diplomacy.button.break_alliance=ยุติความเป็นพันธมิตร
+ui.diplomacy.button.declare_peace=ประกาศสันติภาพ
+
+# UI Manager| Politics tab
+ui.politics.political_support=การสนับสนุนทางการเมือง
+ui.politics.support_breakdown= สนับสนุนการล่มสลาย
+ui.politics.civilian_stability= เสถียรภาพ
+ui.politics.victory_progress= ความคืบหน้าสู่ชัยชนะ
+ui.politics.active_policies=นโยบายที่มีอยู่
+ui.politics.effects= ผลกระทบ:
+ui.politics.conscription= การเกณฑ์ทหาร
+ui.politics.economy= เศรษฐกิจ
+ui.politics.security= ความปลอดภัย
+
+# UI Manager| Economy tab
+ui.economy.treasury= เงินคงคลัง
+ui.economy.income= รายได้
+ui.economy.expenses= ค่าใช้จ่าย
+ui.economy.net= สุทธิ
+ui.economy.urban_taxation= การเก็บภาษีพื้นที่ในเมือง
+ui.economy.oil_exports= การส่งออกน้ำมัน
+ui.economy.foreign_aid= ความช่วยเหลือจากต่างประเทศ
+ui.economy.total_income=รายได้ทั้งหมด
+ui.economy.military_upkeep= ค่าบำรุงกองทัพ
+ui.economy.building_upkeep=ค่าบำรุงสิ่งปลูกสร้าง
+ui.economy.equip_purchases= อุปกรณ์. การสั่งซื้อ
+ui.economy.total_expenses=ค่าใช้จ่ายทั้งหมด
+ui.economy.national_resources=คลังทรัพยากรของชาติ
+ui.economy.crude_oil= น้ำมันดิบ
+ui.economy.fuel=เชื้อเพลิง
+ui.economy.iron_ore= แร่เหล็ก
+ui.economy.steel= เหล็ก
+ui.economy.food= อาหาร
+ui.economy.consumer_goods= สินค้าอุปโภคบริโภค
 
 # Editor| Top Bar
 editor.btn.provinces=จังหวัด
@@ -141,16 +228,16 @@ editor.hint.or_new_name=หรือชื่อใหม่...
 editor.btn.save=บันทึก
 
 # Editor| Duplicate / Save To Popups
-editor.popup.duplicate_title=เซ็ตคัดลอก
-editor.popup.duplicate_format=คัดลอก %s เซ็ต
-editor.popup.new_name_label=ชื่อใหม่
-editor.btn.duplicate_confirm=คัดลอก
-editor.btn.cancel=ยกเลิก
-editor.popup.save_to_title=บันทึกไปที่เซ็ต
-editor.popup.save_to_format=บันทึกข้อมูลปัจจุบันไปที่ %s set:
-editor.set_type.map=แผนที่
-editor.set_type.unit=ยูนิต
-editor.set_type.flag=ธง
+editor.popup.duplicate_title= เซ็ตสำเนา
+editor.popup.duplicate_format=สำเนาเซ็ต %s 
+editor.popup.new_name_label= ชื่อใหม่
+editor.btn.duplicate_confirm= ทำสำเนา
+editor.btn.cancel= ยกเลิก
+editor.popup.save_to_title= บันทึกเซ็ต
+editor.popup.save_to_format=บันทึกข้อมูลปัจจุบันไปที่เซ็ต %s :
+editor.set_type.map= แผนที่
+editor.set_type.unit= ยูนิต
+editor.set_type.flag= ธง
 
 # Editor| Province Panel
 editor.window.province=คุณสมบัติจังหวัด
@@ -291,10 +378,10 @@ editor.btn.pick=เลือก
 editor.tooltip.dropper=กดที่จังหวัดเพื่อเลือกเจ้าของรัฐ
 
 # Editor| Nation/Province Combo Filters
-editor.hint.search_nations=ค้นหาประเทศ...
+editor.hint.search_nations= ค้นหาประเทศ...
 editor.hint.search_provinces=ค้นหาจังหวัด...
 
-# ---- Editor — Province Creation Panel ----
+#Editor| Province Creation Panel
 editor.window.draw_province=วาดจังหวัด
 editor.label.click_map_vertices=กดบนแผนที่เพื่อวางจุด
 editor.label.vertices_placed=จุดที่วางแล้ว: %d
@@ -355,7 +442,7 @@ editor.input.create_urban_state=รัฐ##crurban
 editor.btn.finish_urban=พื้นที่ในเมืองเสร็จสิ้น
 
 # Editor| Nation Editor Tab
-editor.window.nation_editor=ตัวแกไข้ประเทศ
+editor.window.nation_editor=ตัวแก้ไขประเทศ
 editor.label.nations_count=ประเทศ: %d
 editor.input.filter_nations=ตัวกรอง##ประเทศ
 editor.label.selected_nation=เลือกแล้ว: %s
@@ -368,4 +455,382 @@ editor.btn.equipment_tab=อุปกรณ์
 editor.btn.units_tab=ยูนิต
 editor.btn.save_all_def=บันทึกทั้งหมด
 editor.btn.close=ปิด
-editor.label.background_icons=สัญญลักษณ์พื้นหลัง
+editor.label.background_icons=สัญญลักษณ์พื้นหลังeditor.window.definition_editor=ตัวแก้ไขคำอธิบาย
+editor.btn.equipment_tab=อุปกรณ์
+editor.btn.units_tab=ยูนิต
+editor.btn.save_all_def=บันทึกทั้งหมด
+editor.btn.close=ปิด
+editor.label.background_icons=สัญลักษณ์พื้นหลัง
+
+# Map Events| UI
+ui.event.expires= หมดอายุ
+ui.event.effect_stability= เสถียรภาพ
+ui.event.effect_political=การสนับสนุนทางการเมือง
+ui.event.effect_treasury= เงินคงคลัง
+ui.event.chance_outcome= ผลลัพท์ที่อาจจะเกิดขึ้น
+
+# Map Events| Anti-Government Protests
+event.protest.title= การชุมนุมต่อต้านรัฐบาล
+event.protest.desc=เกิดการประท้วงขึ้นใน %s.
+event.protest.negotiate= เจรจา
+event.protest.crack_down=ปราบปราม
+event.protest.ignore= ไม่สนใจ
+
+# Map Events| Corruption Scandal
+event.corruption.title=เรื่องอื้อฉาวการทุจริต
+event.corruption.desc=เรื่องอื้อฉาวการทุจริตถูกเปิดเผยใน %s.
+event.corruption.investigate= สืบสวน
+event.corruption.cover_up= ปกปิด
+
+# Map Events| Prominent Defection
+event.defection.title= การแปรพักตร์
+event.defection.desc= เจ้าหน้าที่ระดับสูงที่มาจาก %s โดนตรวจพบ
+event.defection.amnesty= เสนอการนิรโทษกรรม
+event.defection.denounce= ประนาฌ
+
+# Map Events| Religious Leaders Statement
+event.religious.title= ผู้นำทางศาสนาออกแถลงการณ์
+event.religious.desc= ผู้นำทางศาสนาได้ออกแถลงการณ์แล้ว
+event.religious.support= สนับสนุนคำแถลงการณ์
+event.religious.reject= ปฏิเสธคำแถลงการณ์
+event.religious.neutral= รักษาความเป็นกลางไว้
+
+# Map Events| National Reconciliation
+event.reconciliation.title= ข้อเสนอการปรองดองแห่งชาติ
+event.reconciliation.desc= ข้อเสนอการปรองดองแห่งชาติได้รับการหยิบยกแล้ว
+event.reconciliation.accept= ตกลงที่จะพูดคุย
+event.reconciliation.reject= ปฏิเสธการพูดคุย
+
+# Map Events| Local Council Autonomy
+event.autonomy.title= สภาท้องถิ่นประกาศเอกราช
+event.autonomy.desc=สภาท้องถิ่นใน %s ได้ประกาศเอกราช
+event.autonomy.recognize= ยอมรับ
+event.autonomy.negotiate= เจรจา
+event.autonomy.suppress= ปราบปราม
+
+# Map Events| Refugee Crisis
+event.refugee.title= วิกฤตผู้ลี้ภัย
+event.refugee.desc= มีการเปิดเผยปัญหาผู้ลี้ภัยที่บริเวณ %s.
+event.refugee.assistance= ให้การช่วยเหลือ
+event.refugee.military= ส่งทหารไป
+
+# Map Events| Local Tribal Alliance
+event.tribal.title= พันธมิตรจากชนเผ่าท้องถิ่น
+event.tribal.desc= ชนเผ่าท้องถิ่นจาก %s ได้เสนอการสนับสนุน
+event.tribal.support= เสนอการสนับสนุน
+event.tribal.ignore= ไม่สนใจ
+
+# Settings| Window Mode Labels
+ui.settings.window_mode.windowed= หน้าต่าง
+ui.settings.window_mode.borderless= ไร้ขอบ
+ui.settings.window_mode.fullscreen= เต็มจอ
+
+# Settings| Notes
+ui.settings.note.restart_safe= สามารถเปลี่ยนการตั้งค่าได้อย่างปลอดภัยขณะเล่น
+ui.settings.note.lang_live= การเปลี่ยนภาษาจะมีผลในทันที
+
+# Settings| Dev
+ui.settings.reveal_all_units=  เปิดเผยยูนิตทั้งหมด (Dev)
+
+# City Tooltip
+ui.city.tooltip.population= ประชากร
+ui.city.tooltip.stability= เสถียรภาพ
+ui.city.tooltip.food_supply= เสบียงอาหาร
+ui.city.tooltip.food_stockpile= คลังอาหาร
+ui.city.tooltip.consumer_goods=สินค้าอุปโภคบริโภค
+ui.city.tooltip.cg_stockpile= คลังสินค้าอุปโภคบริโภค
+ui.city.tooltip.manpower_pool=กลุ่มกำลังพล
+ui.city.tooltip.building_health= ความคงทนของสิ่งปลูกสร้าง
+ui.city.tooltip.damaged= ได้รับความเสียหาย
+ui.city.tooltip.depot_supply= คลังเสบียง
+ui.city.tooltip.employment= การจ้างงาน
+
+# Building| Construction
+ui.building.construction_site= สถานที่ก่อสร้าง
+ui.building.building_label= สิ่งปลูกสร้าง
+ui.building.family_label= ตระกูล
+ui.building.progress_label= ความคืบหน้า
+ui.building.remaining_label= ยังคงเหลือ
+ui.building.cancel_construction=ยกเลิกการก่อสร้าง
+
+# Building| Tooltips
+ui.building.tooltip.health= ความคงทน
+ui.building.tooltip.output_inventory= แสดงช่องเก็บของ
+ui.building.tooltip.steel= เหล็ก
+ui.building.tooltip.supplies_stored= เสบียงที่จัดเก็บไว้
+ui.building.tooltip.manpower_stored=กำลังพล
+ui.building.tooltip.fuel= เชื้อเพลิง
+ui.building.tooltip.crude_oil= น้ำมันดิบ
+ui.building.tooltip.iron_ore= แร่เหล็ก
+ui.building.tooltip.aircraft_stored= เครื่องบินที่จัดเก็บไว้
+ui.building.tooltip.food= อาหาร
+ui.building.tooltip.consumer_goods_stored= สินค้าอุปโภคบริโภค
+
+# Building| Factory
+ui.building.no_family_assigned= ไม่มีการมอบหมายตระกูล
+ui.building.set_family= เซ็ตตระกูล
+ui.building.change= เปลี่ยน
+ui.building.thr= THR
+ui.building.hq_label= สำนักงานใหญ่
+ui.building.hq_none= ไม่
+ui.building.no_families= ไม่มีตระกูลปรากฏ
+ui.building.none_all_families=(ไม่มี - ทุกตระกูล)
+ui.building.factories_assigned= โรงงานที่ได้รับมอบหมาย
+
+# Building| Individual Buildings (Headers)
+ui.building.oil_extractor= เครื่องสกัดน้ำมัน
+ui.building.refinery= โรงกลั่น
+ui.building.agri_center= ศูนย์การเกษตร
+ui.building.iron_mine= เหมืองเหล็ก
+ui.building.heavy_industry= อุตสาหกรรมหนัก
+ui.building.civilian_industry= อุตสาหกรรมพลเรือน
+ui.building.airbase= ฐานทัพอากาศ
+ui.building.arms_factory= โรงงานอาวุธ
+ui.building.vehicle_factory= โรงงานยานยนต์
+ui.building.artillery_factory= โรงงานปืนใหญ่
+
+# Building| Oil Extractor
+ui.building.oil.rate_ship=อัตรา: %.1f bbl/s  |  จัดส่งที่: %d
+ui.building.oil.stored=ปริมาณน้ำมันที่เก็บไว้: %d / %d บาร์เรล
+ui.building.oil.next_barrel=บาร์เรลต่อไป: %.0f%%
+ui.building.oil.dispatching=การจัดส่งน้ำมัน...
+ui.building.oil.filling= การเติมเข้า (%d/%d)
+
+# Building| Refinery
+ui.building.refinery.rate_ship=อัตรา: %.1f bbl/s  |  จัดส่งที่: %d
+ui.building.refinery.crude_stored=น้ำมันดิบ: %d / %d
+ui.building.refinery.fuel_stored=เชื้อเพลิง: %d / %d
+ui.building.refinery.no_crude= ไม่มีน้ำมันดิบ - ว่าง
+ui.building.refinery.dispatching=จัดส่งเชื้อเพลิง...
+ui.building.refinery.refining=การกลั่น...
+
+# Building| Agricultural Center
+ui.building.agri.rate_ship=อัตรา: %.1f food/s  |  จัดส่งที่: %d
+ui.building.agri.stored=ปริมาณอาหารที่เก็บไว้: %d / %d หน่วย
+ui.building.agri.dispatching=จัดส่งอาหาร...
+ui.building.agri.harvesting=การเก็บเกี่ยว (%d/%d)...
+
+# Building| Iron Mine
+ui.building.iron.rate_ship= การขุด: %.1f tons/s  |  จัดส่งที่: %d
+ui.building.iron.stored= ปริมาณแร่เหล็กที่เก็บไว้: %d / %d หน่วย
+ui.building.iron.dispatching= จัดส่งแร่เหล็ก...
+ui.building.iron.mining= การทำเหมือง (%d/%d)...
+
+# Building| Heavy Industry
+ui.building.heavy.rate_ship=อัตราการแปลง: %.1f ตัน/วินาที  |  จัดส่งที่: %d
+ui.building.heavy.ore_input=การนำเข้าแร่เหล็ก: %d / %d
+ui.building.heavy.steel_output= ผลผลิตเหล็ก: %d  (จัดส่งที่ %d)
+ui.building.heavy.waiting_ore=รอแร่เหล็ก...
+ui.building.heavy.dispatching=จ้ดส่งเหล็ก...
+ui.building.heavy.smelting= การถลุง...
+
+# Building| Civilian Industry
+ui.building.civ.rate_ship=อัตรา: %.1f หน่วย/วินาที  |  จัดส่งที่: %d
+ui.building.civ.buffer_stored=กันชน: %d หน่วย  |  จัดเก็บ: %d / %d
+ui.building.civ.dispatching= จัดส่งสินค้าอุปโภคบริโภค...
+ui.building.civ.producing= การผลิต (%d/%d)...
+ui.building.civ.connected_urban= เชื่อมต่อกับพื้นที่ในเมือง
+ui.building.civ.no_urban= ไม่มีพื้นที่ในเมืองในประเทศนี้
+ui.building.civ.urban_entry=  %s (%.0f%%, q=%d, %.0fkm)
+ui.building.civ.show_less= แสดงน้อยลง
+ui.building.civ.show_all= แสดงทั้งหมด
+ui.building.civ.nation_status= สถานะประเทศ
+ui.building.civ.avg_supply=  อัตราปกติ: %.0f%%  |  ต่ำที่สุด: %.0f%%  |  พื้นที่ในเมือว: %d
+ui.building.civ.rate_demand=  อัตราของคุณ: %.1f/s  |  ความต้องการทั้งหมด: %.1f/s
+ui.building.civ.tooltip=สินค้าอุปโภคบริโภคช่วยเสริมสร้างเสถียรภาพในเมืองและลดความไม่สงบ
+
+# Building| Depot
+ui.building.depot.equipment=อุปกรณ์: %d / %d
+ui.building.depot.manpower= กำลังพล: %d / %d
+ui.building.depot.crude= น้ำมันดิบ: %d / %d
+ui.building.depot.fuel= เชื้อเพลิง: %d / %d
+
+# Building| Airbase
+ui.building.airbase.aircraft=เครื่องบิน: %d / %d (ที่สั่งการแล้ว %d )
+ui.building.airbase.stationed= เครื่องบินที่พร้อมประจำการ
+ui.building.airbase.no_aircraft= ไม่มีเครื่องบินที่พร้อมประจำการ
+ui.building.airbase.sorties= เที่ยวบิน
+ui.building.airbase.no_sorties= ไม่มีเที่ยวบินที่วางแผนไว้
+ui.building.airbase.new_sortie=+ เพิ่มเที่ยวบินใหม่
+ui.building.airbase.airborne=[ขนส่งทางอากาศ]
+ui.building.airbase.planned=[วางแผนแล้ว]
+ui.building.airbase.sortie_entry= เที่ยวบิน #%d - %s
+ui.building.airbase.aircraft_count= เครื่องบิน: %d  |  Alt: %.0f ft
+ui.building.airbase.target= เป้าหมาย: (%.4f, %.4f)
+ui.building.airbase.no_target= ไม่ได้ตั้งเป้าหมายไว้
+ui.building.airbase.edit= แก้ไข
+ui.building.airbase.dismiss= ยกเลิก
+ui.building.airbase.launch= ปฏิบัติการ
+ui.building.airbase.x_button=X
+ui.building.airbase.assign_hq= มอบหมายกองบัญชาการ
+ui.building.airbase.unassign= ไม่ได้มอบหมาย
+ui.building.airbase.available_fmt=(%d ที่ปรากฏ)
+
+# Building| Creation Tab
+ui.building.create.select_type= เลือกชนิดสิ่งปลูกสร้าง
+ui.building.create.click_to_place= คลิกซ้ายบนแผนที่เพื่อวาง
+ui.building.create.press_b= กด B หรือ ยกเลิก เพื่อปิด
+ui.building.create.arms_factory= โรงงานอาวุธ
+ui.building.create.military_hq= กองบัญชาการ
+ui.building.create.depot=  คลังสินค้า
+ui.building.create.oil_extractor= เครื่องกลั่นน้ำมัน
+ui.building.create.refinery= โรงกลั่น
+ui.building.create.agri_center= ศูนย์การเกษตร
+ui.building.create.iron_mine= เหมืองเหล็ก
+ui.building.create.heavy_industry= อุตสาหกรรมหนัก
+ui.building.create.vehicle_factory= โรงงานยานยนต์
+ui.building.create.artillery_factory= โรงงานปืนใหญ่
+ui.building.create.civilian_industry= อุตสาหกรรมพลเรือน
+ui.building.create.cancel= ยกเลิก
+
+# Unit Tooltips
+ui.tooltip.unknown_unit= ยูนิตที่ไม่สามารถระบุได้
+ui.tooltip.unknown= ไม่รู้
+ui.tooltip.fuel_status= เชื้อเพลิง: %.0f%% (%+.1f/t)  ค่าปรับ: %.0f%%
+ui.tooltip.road_health= คุณภาพถนน: %.0f%% (ความเร็ว -%.0f%% )
+
+# Infantry / Road Health Label
+ui.label.road_health= คุณภาพถนน
+ui.label.health= คุณภาพ
+
+# Economy Tab
+ui.economy.treasury_label= เงินคงคลัง
+ui.economy.income_label= รายได้
+ui.economy.expenses_label= ค่าใช้จ่าย
+ui.economy.net_label= สุทธิ
+ui.economy.total_income_fmt= รายได้ทั้งหมด:      +%.1f /s
+ui.economy.total_expenses_fmt= ค่าใช้จ่ายทั้งหมด:    -%.1f /s
+ui.economy.net_fmt=สุทธิ:               %+.1f /s
+ui.economy.net_tooltip_fmt=อัตรารายได้สุทธิ.  ด้วยอัตรานี้, เงินคงคลังจะ %s by %.0f ในอีกหนึ่งนาทีข้างหน้า
+ui.economy.net_grow= เติบโต
+ui.economy.net_shrink= หดตัว
+ui.economy.urban_tax_fmt= ภาษีในเมือง:    +%.1f /s
+ui.economy.oil_exports_fmt= การส่งออกน้ำมัน:       +%.1f /s
+ui.economy.foreign_aid_fmt= ความช่วยเหลือจากต่างประเทศ:       +%.1f /s
+ui.economy.military_upkeep_fmt= ค่าบำรุงกองทัพ:   -%.1f /s
+ui.economy.building_upkeep_fmt= ค่าบำรุงสิ่งปลูกสร้าง:   -%.1f /s
+ui.economy.equip_purchases_fmt= การสั่งซื้ออุปกรณ์  -%.1f /s
+ui.economy.resources_label= คลังทรัพยากรของชาติ
+ui.economy.crude_oil_fmt= น้ำมันดิบ:        %d
+ui.economy.fuel_fmt= เชื้อเพลิง:             %d
+ui.economy.iron_ore_fmt= แร่เหล็ก:         %d
+ui.economy.steel_fmt= เหล็ก:            %d
+ui.economy.food_fmt= อาหาร:             %d
+ui.economy.consumer_goods_fmt= สินค้าอุปโภคบริโภค:   %d
+
+# Economy| Tooltips
+ui.economy.tooltip.tax=รายได้จากภาษีของประชากรในเมืองที่อยู่ภายใต้การควบคุมของคุณ\nApprox. 1 เงินคงคลัง/วินาทีต่อ 1000 ประชากร.
+ui.economy.tooltip.oil=รายได้จากการส่งออกน้ำมันดิบส่วนเกิน\n(ปริมาณการผลิตเกินกว่าโรงกลั่นภายในประเทศ + อัตราการใช้เชื้อเพลิงต่อหน่วย).\n1 บาร์เรล/วินาที ส่วนเกิน = 0.5 เงินคงคลัง/วินาที.
+ui.economy.tooltip.aid=ความช่วยเหลือทางการเงินจากประเทศอื่นๆ\n ภายใต้ข้อตกลงความช่วยเหลือทางการเงินที่ยังมีผลบังคับใช้
+ui.economy.tooltip.military_upkeep=ค่าบำรุงอุปกรณ์(0.5%% ของราคาผลิตภัณฑ์/วินาทีต่อรายการ)\n+ รายได้กำลังพล (0.5/วินาทีต่อยูนิตชย).
+ui.economy.tooltip.building_upkeep= ค่าบำรุงทุกสิ่งปลูกสร้าง \n  โรงงาน: 1.0/s, HQ: 2.0/s คลัง: 0.5/s,\nน้ำมัน/โรงกลั่น/เหมือง/อุตสาหกรรมหนัก: 1.5/s,\n การเกษตร: 0.5/s, อุตสาหกรรมพลเรือน: 0.3/s, ฐานทัพอากาศ: 3.0/s.
+ui.economy.tooltip.equip_purchases=ต้นทุนตัดจำหน่ายของอุปกรณ์ที่ซื้อมา\n จากประเทศอื่นๆ ผ่านข้อตกลงการจัดซื้อจัดจ้าง
+
+# Politics Tab
+ui.politics.political_support_label= การสนับสนุนทางการเมือง
+ui.politics.civilian_stability_label= เสถียรภาพ
+ui.politics.victory_progress_label= ความคืบหน้าสู่ชัยชนะ
+ui.politics.active_policies_label= นโยบายที่มีผลบังคับใช้
+ui.politics.objectives_label= วัตถุประสงค์
+ui.politics.conscription_label= การเกณฑ์ทหาร
+ui.politics.economy_label= เศรษฐกิจ
+ui.politics.security_label= ความปลอดภัย
+ui.politics.hold_until_fmt= ยันไว้จนกว่า: %04d-%02d-%02d
+ui.politics.elite= ชนชั้นสูง
+ui.politics.military= ทหาร
+ui.politics.government= รัฐบาล
+ui.politics.urban_civilian= ประชาชนในเมือง
+
+# Politics| Policy Effects
+ui.politics.effects_on_selection= ผลลัพท์ต่อการเลือก
+ui.politics.effect.elite= ชนชั้นสูง
+ui.politics.effect.military= ทหาร
+ui.politics.effect.government= รัฐบาล
+ui.politics.effect.urban_civilian= ประชาชนในเมือง
+ui.politics.effect.stability= เสถียรภาพ
+ui.politics.effect.manpower= กำลังพล
+ui.politics.effect.factory_output= ผลผลิตจากโรงงาน
+ui.politics.effect.consumer_goods= สินค้าอุปโภคบริโภค
+ui.politics.effect.no_change= ไม่เปลี่ยนแปลง
+
+# Military Tab
+ui.military.unit_composition=Unit Composition Editor
+ui.military.live_unit_editor= ตัวแก้ไขยูนิต
+ui.military.unit_types= ประเภทของยูนิต
+ui.military.selected_fmt= เลือกไว้ (%d)
+ui.military.composition= องค์ประกอบ
+ui.military.no_units= ไม่มียูนิตที่เลือกไว้
+ui.military.composition_goals_fmt= องค์ประกอบของเป้าหมาย (%d ยูนิต%s)
+ui.military.goal= เป้าหมาย
+ui.military.sync_all= เชื่อมต่อกันทั้งหมด
+ui.military.select_prompt= เลือกประเภทยูนิตจากรายการ หรือ เลือกยูนิตจากบนแผนที่แล้วกด C
+ui.military.add_family=+ เพิ่มตระกูล
+
+# Sortie Tab
+ui.sortie.airborne=ขนส่งทางอากาศ
+ui.sortie.planned=วางแผนแล้ว
+ui.sortie.title_fmt= เที่ยวบิน #%d [%s]
+ui.sortie.aircraft_assigned= มอบหมายให้เครื่องบินแล้ว
+ui.sortie.none_assigned= ไม่มีการมอบหมาย
+ui.sortie.add_aircraft= เพิ่มเครื่องบิน
+ui.sortie.remove_aircraft=นำเครื่องบินออก
+ui.sortie.select_aircraft= เลือกประเภทเครื่องบิน
+ui.sortie.no_aircraft_avail= ไม่มีเครื่องบินปรากฏ
+ui.sortie.mission_label= ภารกิจ
+ui.sortie.target_label= เป้าหมาย
+ui.sortie.no_target_set= ไม่มีเป้าหมายที่ตั้งไว้
+ui.sortie.set_target= ตั้งเป้าหมายไว้บนแผนที่
+ui.sortie.click_map= กดแผนที่...
+ui.sortie.clear= ล้าง
+ui.sortie.altitude= ระดับความสูง
+ui.sortie.air_radius= ระยะ
+ui.sortie.mission_strength= ความแข็งแกร่งของภารกิจ
+ui.sortie.org_efficiency= ประสิทธิภาพของทีม
+ui.sortie.large_batch=(ค่าปรับสำหรับสินค้าล็อตใหญ่)
+ui.sortie.low_fuel= เชื้อเพลิงต่ำ
+ui.sortie.slowest_aircraft= เครื่องบินที่ช้าที่สุด: %.6f u/s
+ui.sortie.time_airborne=ระยะเวลาในการขนส่งทางอากาศ: %.0f s
+ui.sortie.dismiss_recall=ยกเลิก (เรียกเครื่องบินกลับมา)
+ui.sortie.close= ปิด
+ui.sortie.launch_sortie= เริ่มเที่ยวบิน
+ui.sortie.need_aircraft= ต้องการเครื่องบินและเป้าหมายเพื่อเริ่ม
+ui.sortie.launch_idle= เริ่มโดยไม่มีเป้าหมาย (ลาดตระเวน
+
+# Sortie| Aircraft Tooltip
+ui.sortie.tooltip.alt=Alt
+ui.sortie.tooltip.mission= ภารกิจ
+ui.sortie.tooltip.strength= ความแข็งแกร่ง
+ui.sortie.tooltip.efficiency= ประสิทธิภาพ
+ui.sortie.tooltip.fuel_fmt= เชื้อเพลิง: %.0f / %.0f (%.0f%%)
+ui.sortie.tooltip.helicopter=(เฮลิคอปเตอร์)
+ui.sortie.tooltip.phase= ช่วง
+ui.sortie.tooltip.state= สถานะ
+
+# Sortie — Flight Phases
+ui.sortie.phase.transit= การขนส่ง
+ui.sortie.phase.racetrack= ลานสนามบิน
+ui.sortie.phase.figure8= รอลงจอด
+ui.sortie.phase.ingress= ลงจอด
+ui.sortie.phase.egress= ขึ้นบิน
+ui.sortie.phase.weave= เข้าขบวน
+ui.sortie.state.transit= ขนส่ง
+ui.sortie.state.on_station= บนสถานี
+ui.sortie.state.rtb=RTB
+
+# City Tab| Construction Buttons
+ui.button.agri_center= ศูนย์การเกษตร
+ui.button.civ_industry= อุตสาหกรรมพลเรือน
+ui.button.airbase= ฐานทัพอากาศ
+
+# Unit Creation Tab
+ui.window.unit_creator= ตัวสร้างยูนิต
+
+# End Game
+ui.endgame.title= ชัยชนะ
+ui.endgame.subtitle= บรรลุเป้าหมายทุกประการ ประเทศชาติรวมเป็นหนึ่งเดียว
+
+# HQ Assignment
+ui.building.hq_name= สำนักงานใหญ่
+ui.building.hq_assign= มอบหมายสำนักงานใหญ่
+ui.building.hq_unassign= ไม่ได้มอบหมาย
+
