@@ -8,36 +8,49 @@
 menu.button.start_game=Начать игру
 menu.button.profile=Профиль
 menu.button.settings=Настройки
-menu.button.quit=Выйти
-menu.intro.presented_by=Представлено вам
-menu.intro.layth_issam_elzaim=Л е й т  И с с а м  Э л ь  З а и м
-# You can transliterate or get the equivalent of my name in your language, 
-#make sure to do a space between each character that is next to each other, 
-#and double space where there would normally be 1 space.
+menu.button.quit=Выход
+menu.button.credits=Авторы
+menu.intro.presented_by=Представляет
+menu.intro.layth_issam_elzaim=L a y t h  I s s a m  E l  Z a i m
 
-# Settings| NEW STUFF AND THAT'S IT [No other updates past my name and the settings for now]
+# Credits Screen
+menu.credits.line1=Игра от Layth Issam El Zaim
+menu.credits.line2=(Единственный разработчик и создатель)
+# to make space between credits do the key then leave value blank like so
+menu.credits.line3=
+#Then I would like for all contributors to put their credit appropriately
+#now add all of yours here and all translators try to keep your locales up to date with the credits as well, you can even put the names in the respective language.
+menu.credits.line5=Локализация на иврит: adar albajari (doctor4rats)
+menu.credits.line5=
+menu.credits.line6=Локализация на греческий: DLRGR202O
+
+menu.credits.click_to_return=Кликните в любом месте для возврата
+
+# Settings
 ui.settings.title=Настройки
 ui.settings.tab.graphics=Графика
 ui.settings.tab.language=Язык
-ui.settings.tab.game_visuals=Визуализация игры
+ui.settings.tab.game_visuals=Визуал игры
 
 ui.settings.resolution=Разрешение
-ui.settings.window_mode=Оконный режим
+ui.settings.window_mode=Режим окна
 
 ui.settings.language=Язык
 
 # UI Manager| Flag Bar
 ui.button.diplomacy=Дипломатия
+ui.button.politics=Политика
 ui.button.economy=Экономика
-ui.button.unset=Сбросить
-ui.button.military=Военное дело
+ui.button.military=Армия
 
 # UI Manager| Country Select
 ui.button.play_as=Играть за
 
 # UI Manager| Settings
 ui.window.settings=Настройки
-ui.settings.secondary_icons=Использовать вторичные значки юнитов
+ui.settings.secondary_icons=Использовать вторичные иконки юнитов
+ui.settings.secondary_aircraft_icons=Использовать вторичные иконки самолётов
+ui.settings.nato_aircraft_coloring=Самолёты в цветах НАТО (без фона)
 ui.settings.flag_zoom_out=Показывать флаг при отдалении (юниты)
 ui.settings.nation_overlay=Наложение наций (N)
 ui.settings.always_flag=Всегда показывать флаг на юнитах (F)
@@ -48,25 +61,27 @@ ui.label.pop=Население: %d
 ui.label.buildings=Здания:
 ui.label.no_buildings=Нет зданий
 ui.label.construct=Построить:
-ui.button.factory=Фабрика
+ui.button.factory=Завод
 ui.button.military_hq=Военный штаб
 ui.button.depot=Склад
+ui.button.oil_extractor=Нефтедобыча
+ui.button.refinery=Нефтезавод
 
 # UI Manager| City Tab (multiple cities)
 ui.label.cities_selected=Выбрано городов: %zu
 ui.label.total_buildings=Всего зданий:
-ui.label.no_buildings_selected=В выбранных городах нет зданий
-ui.button.create_units=Создать юнитов
+ui.label.no_buildings_selected=Нет зданий в выбранных городах
+ui.button.create_units=Создать юниты
 ui.button.construct_buildings=Построить здания
 
 # UI Manager| Building Tab
-ui.building.industrial_factory=Промышленная фабрика
+ui.building.industrial_factory=Промышленный завод
 ui.building.production_lines=Производственные линии:
-ui.building.inventory=Инвентарь:
+ui.building.inventory=Запасы:
 ui.building.no_items=Нет предметов
 ui.button.add_production_line=Добавить производственную линию
 ui.building.military_hq_title=Военный штаб
-ui.button.spawn_unit=Создать юнита
+ui.button.spawn_unit=Создать юнит
 ui.building.supply_depot=Склад снабжения
 ui.building.stored_equipment=Хранимое снаряжение:
 ui.label.empty=Пусто
@@ -77,33 +92,108 @@ ui.button.cancel=Отмена
 
 # UI Manager| Unit Tooltip
 ui.tooltip.no_equipment=Нет снаряжения
-ui.tooltip.morale=Моральный дух: %.1f
+ui.tooltip.morale=Боевой дух: %.1f
+ui.tooltip.organization=Организация: %.2f
 ui.tooltip.retreat_behavior=Поведение при отступлении: %s
 ui.retreat.normal=Обычное
-ui.retreat.hold_position=Удерживать позицию
+ui.retreat.hold_position=Держать позицию
 ui.retreat.fallback=Отход
 ui.tooltip.forming=ФОРМИРОВАНИЕ: %.0f%%
+ui.tooltip.assigned_to_hq=Приписан к: %s
+ui.tooltip.right_click_for_hq=ПКМ для приписки к штабу
+ui.tooltip.subordinates=Подчинённые: %d
+ui.tooltip.hq_org_bonus=Бонус организации от штаба: +%.0f%%
+
+# UI Manager| HQ Assignment
+ui.hq.assigning=Назначение
+ui.hq.assign_mode=Кликните по штабному юниту для назначения
+ui.hq.assign_cancel=ПКМ или Esc для отмены
+ui.hq.assigning_factory=Назначение завода
+
+# UI Manager| Factory Tab
+ui.factory.no_hq_assigned=Штаб не назначен — ПКМ для назначения
+ui.factory.priority_tooltip=Авторегулировка штаба пропустит эту производственную линию
+ui.factory.priority_badge=[ПРИОРИТЕТ]
 
 # UI Manager| Invasion Mode
 ui.invasion.mode_active=РЕЖИМ ВТОРЖЕНИЯ АКТИВЕН
-ui.invasion.draw_line=Нарисуйте линию наступления для плана
-ui.invasion.toggle_off=Нажмите 'I' для отключения
+ui.invasion.draw_line=Проведите линию наступления для планирования
+ui.invasion.toggle_off=Нажмите «I» для выключения
 ui.button.execute=ВЫПОЛНИТЬ
 
 # UI Manager| Building Creation Tab
-ui.window.construct_building=Построить здание
+ui.window.construct_building=Строительство здания
 ui.label.construct_building=Построить здание:
 
 # UI Manager| Diplomacy tab
 ui.diplomacy.your_nation=Ваша нация:
 ui.diplomacy.status_ally=СОЮЗНИК
-ui.diplomacy.status_war=В СОСТОЯНИИ ВОЙНЫ
-ui.diplomacy.status_neutral=Нейтрально
-ui.diplomacy.button_ally=Объявить союз
+ui.diplomacy.status_war=ВОЙНА
+ui.diplomacy.status_neutral=Нейтралитет
+ui.diplomacy.button_ally=Заключить союз
 ui.diplomacy.button_war=Объявить войну
 ui.diplomacy.button_break_alliance=Разорвать союз
-ui.diplomacy.button_peace=Объявить мир
-ui.diplomacy.info_tooltip=Правый клик по карте, чтобы закрыть
+ui.diplomacy.button_peace=Заключить мир
+ui.diplomacy.info_tooltip=ПКМ по карте для закрытия
+ui.diplomacy.relation_value=Отношения
+ui.diplomacy.active_agreements=Активные соглашения
+ui.diplomacy.no_agreements=Нет активных соглашений
+ui.diplomacy.propose_agreement=Предложить соглашение
+ui.diplomacy.agreement.air_support=Соглашение об авиаподдержке
+ui.diplomacy.agreement.equipment_procurement=Закупка снаряжения
+ui.diplomacy.agreement.satellite_intel=Спутниковая разведка
+ui.diplomacy.agreement.military_assistance=Военная помощь
+ui.diplomacy.agreement.financial_aid=Финансовая помощь
+ui.diplomacy.button.propose_air_support=Предложить авиаподдержку
+ui.diplomacy.button.propose_equipment=Предложить закупку снаряжения
+ui.diplomacy.button.propose_satellite=Запросить спутниковую разведку
+ui.diplomacy.button.propose_military_access=Предложить военный доступ
+ui.diplomacy.button.request_aid=Запросить финансовую помощь
+ui.diplomacy.button.purchase_equipment=Купить снаряжение
+ui.diplomacy.button.emergency_aid=Запросить экстренную военную помощь
+ui.diplomacy.button.terminate=Расторгнуть
+ui.diplomacy.purchase.title=Закупка снаряжения
+ui.diplomacy.purchase.price_factor=Коэффициент цены
+ui.diplomacy.purchase.filter_hint=Фильтр снаряжения...
+ui.diplomacy.purchase.qty=Кол-во
+ui.diplomacy.purchase.buy=Купить
+ui.diplomacy.purchase.no_equipment=У цели нет доступного снаряжения
+ui.diplomacy.button.declare_ally=Заключить союз
+ui.diplomacy.button.declare_war=Объявить войну
+ui.diplomacy.button.break_alliance=Разорвать союз
+ui.diplomacy.button.declare_peace=Заключить мир
+
+# UI Manager| Politics tab
+ui.politics.political_support=Политическая поддержка
+ui.politics.support_breakdown=Разбивка поддержки
+ui.politics.civilian_stability=Гражданская стабильность
+ui.politics.victory_progress=Прогресс к победе
+ui.politics.active_policies=Действующие политики
+ui.politics.effects=Эффекты:
+ui.politics.conscription=Призыв
+ui.politics.economy=Экономика
+ui.politics.security=Безопасность
+
+# UI Manager| Economy tab
+ui.economy.treasury=Казна
+ui.economy.income=Доход
+ui.economy.expenses=Расходы
+ui.economy.net=Баланс
+ui.economy.urban_taxation=Городские налоги
+ui.economy.oil_exports=Экспорт нефти
+ui.economy.foreign_aid=Иностранная помощь
+ui.economy.total_income=Общий доход
+ui.economy.military_upkeep=Содержание армии
+ui.economy.building_upkeep=Содержание зданий
+ui.economy.equip_purchases=Закупки снаряжения
+ui.economy.total_expenses=Общие расходы
+ui.economy.national_resources=Национальные запасы ресурсов
+ui.economy.crude_oil=Сырая нефть
+ui.economy.fuel=Топливо
+ui.economy.iron_ore=Железная руда
+ui.economy.steel=Сталь
+ui.economy.food=Продовольствие
+ui.economy.consumer_goods=Товары потребления
 
 # Editor| Top Bar
 editor.btn.provinces=Провинции
@@ -115,13 +205,13 @@ editor.btn.units=Юниты
 editor.btn.nations=Нации
 editor.btn.draw_province=Нарисовать провинцию
 editor.btn.definitions=Определения
-editor.btn.ref=+ Ссылка
-editor.tooltip.render_settings=Настройки отрисовки
+editor.btn.ref=+ Подложка
+editor.tooltip.render_settings=Настройки отображения
 editor.label.modified=[ИЗМЕНЕНО]
-editor.label.no_map=Карта не загружена — откройте Браузер ресурсов для загрузки набора карт
+editor.label.no_map=Карта не загружена — откройте обозреватель ресурсов, чтобы загрузить набор карт
 
 # Editor| Resource Browser
-editor.window.resource_browser=Браузер ресурсов
+editor.window.resource_browser=Обозреватель ресурсов
 editor.tab.maps=Карты
 editor.tab.units=Юниты
 editor.tab.flags=Флаги
@@ -157,12 +247,12 @@ editor.window.province=Свойства провинции
 editor.label.province_id=ID провинции: %d
 editor.input.province_name=Название провинции
 editor.input.owning_nation=Владеющая нация
-editor.input.assign_nation=Назначить нации
+editor.input.assign_nation=Присвоить нации
 editor.label.vertices=Вершины: %d  (граница: %d)
 editor.label.vertex_info=Вершина #%d  (%.6f, %.6f)
 editor.input.vertex_pos=Позиция
 editor.label.belongs_to=Принадлежит провинции: %d (%s)
-editor.input.reassign_id=Переназначить на ID провинции
+editor.input.reassign_id=Переназначить в провинцию ID
 editor.btn.reassign=Переназначить вершину
 editor.btn.remove_vertex=Удалить вершину
 editor.label.interior_vertex=(внутренняя вершина)
@@ -177,7 +267,7 @@ editor.btn.delete_province=Удалить эту провинцию
 
 # Editor| Nation Panel
 editor.window.nation=Свойства нации
-editor.label.nation_hash=Хеш: %u  Провинций: %d
+editor.label.nation_hash=Хеш: %u  Провинции: %d
 editor.input.nation_name=Название нации
 editor.label.no_flag=(нет флага)
 editor.label.flag_set=Набор флагов: %s
@@ -187,20 +277,20 @@ editor.btn.add_ally=Добавить союзника
 editor.label.enemies=Враги
 editor.btn.add_enemy=Добавить врага
 editor.label.province_list_header=Список провинций
-editor.label.state_management=Управление государством
-editor.input.new_state_name=Имя нового государства##newstate
-editor.btn.create_state=Создать государство
-editor.btn.delete_state=Удалить это государство
+editor.label.state_management=Управление регионами
+editor.input.new_state_name=Название нового региона##newstate
+editor.btn.create_state=Создать регион
+editor.btn.delete_state=Удалить этот регион
 
 # Editor| City Panel
 editor.window.city=Редактор городов
-editor.label.cities_count=Городов: %d
+editor.label.cities_count=Города: %d
 editor.btn.placing_cities=Размещение городов...
 editor.btn.place_city=Разместить город
 editor.label.click_map_place=Кликните по карте для размещения
 editor.label.city_id=Город #%d
-editor.input.city_name=Имя
-editor.input.city_state=Государство
+editor.input.city_name=Название
+editor.input.city_state=Регион
 editor.input.city_province=Провинция
 editor.input.population=Население
 editor.input.lon_lat=Долгота / Широта
@@ -211,7 +301,7 @@ editor.input.filter=Фильтр
 
 # Editor| Road Panel
 editor.window.road=Редактор дорог
-editor.label.segments=Сегментов: %d
+editor.label.segments=Сегменты: %d
 editor.btn.new_segment=Новый сегмент
 editor.label.add_mode=РЕЖИМ ДОБАВЛЕНИЯ
 editor.btn.stop=Стоп
@@ -223,36 +313,36 @@ editor.btn.delete_segment=Удалить сегмент
 
 # Editor| Building Panel
 editor.window.building=Редактор зданий
-editor.label.buildings_click=Зданий: %d  — кликните по карте для размещения
+editor.label.buildings_click=Здания: %d  — кликните по карте для размещения
 editor.label.building_id=Здание #%d
 editor.input.building_type=Тип
-editor.input.owner_state=Государство-владелец
+editor.input.owner_state=Регион-владелец
 editor.input.city_assign=Город
 editor.input.building_pos=Позиция
-editor.label.drag_map=Перетаскивайте по карте для перемещения
-editor.label.factory_props=Свойства фабрики
+editor.label.drag_map=Перетащите на карте для перемещения
+editor.label.factory_props=Свойства завода
 editor.input.throughput=Пропускная способность
 editor.input.shipping_threshold=Порог отгрузки
-editor.label.production_lines_count=Производственных линий: %d
+editor.label.production_lines_count=Производственные линии: %d
 editor.input.equipment=Снаряжение
 editor.input.capacity=Вместимость
 editor.btn.remove=Удалить
 editor.btn.add_production_line=Добавить производственную линию
 editor.label.depot_props=Свойства склада
-editor.input.max_equipment=Макс. вместимость снаряжения
-editor.input.max_manpower=Макс. вместимость личного состава
+editor.input.max_equipment=Максимальная вместимость снаряжения
+editor.input.max_manpower=Максимальная вместимость личного состава
 editor.label.military_hq=Военный штаб
 editor.label.no_additional_props=Нет дополнительных свойств
 editor.btn.delete_building=Удалить здание
 
 # Editor| Unit Panel
 editor.window.unit=Редактор юнитов
-editor.label.units_click=Юнитов: %d  — кликните по карте для размещения
+editor.label.units_click=Юниты: %d  — кликните по карте для размещения
 editor.label.unit_id=Юнит #%d
 editor.input.given_name=Имя
 editor.label.given_name_hint=Имя юнита (необязательно, будет сгенерировано автоматически)
 editor.input.definition=Определение
-editor.checkbox.fully_formed=Полностью сформирован (создать на полной численности)
+editor.checkbox.fully_formed=Полностью сформирован (создать в полной силе)
 editor.btn.generate_name=Автоимя
 editor.btn.delete_unit=Удалить юнит
 
@@ -264,70 +354,70 @@ editor.mode.roads=Дороги
 editor.mode.buildings=Здания
 editor.mode.units=Юниты
 editor.mode.nations=Нации
-editor.status.modified=[ИЗМЕНЕНО]
-editor.status.dropper_active=| ПИПЕТКА АКТИВНА
-editor.status.add_vertex=| ДОБАВИТЬ ВЕРШИНУ
+editor.status.modified= [ИЗМЕНЕНО]
+editor.status.dropper_active= | ПИПЕТКА АКТИВНА
+editor.status.add_vertex= | ДОБАВЛЕНИЕ ВЕРШИНЫ
 editor.status.no_map=Карта не загружена
 
 # Editor| Help Overlay
 editor.window.controls=Управление
 editor.help.navigation=Навигация
-editor.help.wasd=WASD / Правое перетаскивание: Панорама
-editor.help.scroll=Прокрутка: Масштаб
-editor.help.selection=Выбор
-editor.help.click=Клик: Выбрать / Разместить
-editor.help.shift_click=Shift+Клик: Нация (режим Провинций)
-editor.help.drag=Перетаскивание: Переместить выбранное
-editor.help.escape=Escape: Отменить выбор
-editor.help.ctrl_s=Ctrl+S: Сохранить всё
-editor.help.pick=Кнопка выбора: Инструмент «Пипетка»
+editor.help.wasd=WASD / Перетаскивание ПКМ: панорама
+editor.help.scroll=Колёсико: масштаб
+editor.help.selection=Выделение
+editor.help.click=ЛКМ: выбрать / разместить
+editor.help.shift_click=Shift+ЛКМ: нация (режим провинций)
+editor.help.drag=Перетаскивание: переместить выбранное
+editor.help.escape=Escape: снять выделение
+editor.help.ctrl_s=Ctrl+S: сохранить всё
+editor.help.pick=Кнопка «Пипетка»: инструмент пипетки
 
 # Editor| Dropper Overlay
-editor.dropper.click_province=Кликните по провинции, чтобы выбрать государство
+editor.dropper.click_province=Кликните по провинции, чтобы взять регион
 
 # Editor| Dropper Button
 editor.btn.picking=Выбор...
-editor.btn.pick=Выбрать
-editor.tooltip.dropper=Кликните по провинции на карте, чтобы выбрать её государство-владельца
+editor.btn.pick=Пипетка
+editor.tooltip.dropper=Кликните по провинции на карте, чтобы взять её регион-владелец
 
 # Editor| Nation/Province Combo Filters
 editor.hint.search_nations=Поиск наций...
 editor.hint.search_provinces=Поиск провинций...
 
-# ---- Editor — Province Creation Panel ----
+#Editor| Province Creation Panel
 editor.window.draw_province=Нарисовать провинцию
-editor.label.click_map_vertices=Кликните по карте для размещения вершин
+editor.label.click_map_vertices=Кликайте по карте для размещения вершин
 editor.label.vertices_placed=Размещено вершин: %d
 editor.input.create_prov_name=Имя##crprov
-editor.input.create_prov_state=Государство##crprov
+editor.input.create_prov_state=Регион##crprov
 editor.btn.undo_last=Отменить последнюю вершину
 editor.btn.finish_province=Завершить провинцию
 editor.label.or_click_first=Или кликните рядом с первой вершиной (зелёная точка), чтобы замкнуть фигуру.
 editor.label.min_3_verts=Разместите минимум 3 вершины для завершения.
 
 # Editor| Reference Overlay Panel
-editor.window.ref_image=Свойства референсного изображения
+editor.window.ref_image=Свойства подложки
 editor.btn.delete=Удалить
 editor.btn.unlock=Разблокировать
 editor.btn.lock=Заблокировать
 editor.btn.hide=Скрыть
 editor.btn.show=Показать
-editor.input.opacity=Прозрачность
+editor.input.opacity=Непрозрачность
 editor.input.position=Позиция
 editor.input.size=Размер (Ш/В)
 editor.input.scale=Масштаб
-editor.btn.fit_to_map=Подогнать под карту
+editor.btn.fit_to_map=По размеру карты
 
 # Editor| Render Settings
-editor.window.render_settings=Настройки отрисовки
+editor.window.render_settings=Настройки отображения
 editor.label.tile_textures=Текстуры тайлов
 editor.checkbox.show_tile_textures=Показывать текстуры тайлов
 editor.input.tint_strength=Сила оттенка
-editor.label.nation_rendering=Отрисовка наций
-editor.checkbox.render_by_nation=Отрисовка по цвету нации
+editor.label.nation_rendering=Отображение наций
+editor.checkbox.render_by_nation=Раскраска по цвету нации
 editor.checkbox.show_nation_flags=Показывать флаги наций
-editor.tooltip.nation_flags=Отрисовка флагов наций над центром их территории
-editor.label.layer_opacities=Прозрачность слоёв
+editor.tooltip.nation_flags=Отображать флаги наций в центре их территории
+editor.label.layer_opacities=Непрозрачность слоёв
 editor.input.provinces_opacity=Провинции
 editor.input.roads_opacity=Дороги
 editor.input.city_dots_opacity=Точки городов
@@ -338,25 +428,25 @@ editor.btn.reset_all=Сбросить всё
 
 # Editor| Urban Area Panel
 editor.window.urban=Редактор городских зон
-editor.label.urban_count=Городских зон: %d
+editor.label.urban_count=Городские зоны: %d
 editor.btn.draw_urban=Нарисовать городскую зону
 editor.label.drawing_urban=Рисование... (%d вершин)
-editor.label.urban_id=Городская зона #%d  (%d вершин границы)
-editor.input.urban_name=Имя
-editor.input.urban_state=Государство-владелец
+editor.label.urban_id=Городская зона #%d  (%d граничных вершин)
+editor.input.urban_name=Название
+editor.input.urban_state=Регион-владелец
 editor.input.urban_province=Провинция
 editor.input.urban_pop=Население
 editor.input.filter_urban=Фильтр##urban
 
 # Editor| Urban Area Creation Panel
 editor.window.draw_urban=Нарисовать городскую зону
-editor.input.create_urban_name=Имя##crurban
-editor.input.create_urban_state=Государство##crurban
+editor.input.create_urban_name=Название##crurban
+editor.input.create_urban_state=Регион##crurban
 editor.btn.finish_urban=Завершить городскую зону
 
 # Editor| Nation Editor Tab
 editor.window.nation_editor=Редактор наций
-editor.label.nations_count=Наций: %d
+editor.label.nations_count=Нации: %d
 editor.input.filter_nations=Фильтр##nations
 editor.label.selected_nation=Выбрано: %s
 editor.input.nation_name_ne=Название нации##ne
@@ -368,4 +458,376 @@ editor.btn.equipment_tab=Снаряжение
 editor.btn.units_tab=Юниты
 editor.btn.save_all_def=Сохранить всё
 editor.btn.close=Закрыть
-editor.label.background_icons=Фоновые значки
+editor.label.background_icons=Фоновые иконки
+
+# Map Events| UI
+ui.event.expires=Истекает
+ui.event.effect_stability=Стабильность
+ui.event.effect_political=Политическая поддержка
+ui.event.effect_treasury=Казна
+ui.event.chance_outcome=Случайный исход
+
+# Map Events| Anti-Government Protests
+event.protest.title=Антиправительственные протесты
+event.protest.desc=В %s вспыхнули демонстрации.
+event.protest.negotiate=Переговоры
+event.protest.crack_down=Подавить
+event.protest.ignore=Игнорировать
+
+# Map Events| Corruption Scandal
+event.corruption.title=Коррупционный скандал
+event.corruption.desc=В %s разразился коррупционный скандал.
+event.corruption.investigate=Расследовать
+event.corruption.cover_up=Замять
+
+# Map Events| Prominent Defection
+event.defection.title=Побег высокопоставленного лица
+event.defection.desc=Высокопоставленный чиновник бежал из %s.
+event.defection.amnesty=Предложить амнистию
+event.defection.denounce=Осудить предателя
+
+# Map Events| Religious Leaders Statement
+event.religious.title=Религиозные лидеры выступили с заявлением
+event.religious.desc=Религиозные лидеры выступили с заявлением.
+event.religious.support=Поддержать заявление
+event.religious.reject=Отвергнуть заявление
+event.religious.neutral=Сохранить нейтралитет
+
+# Map Events| National Reconciliation
+event.reconciliation.title=Предложение о национальном примирении
+event.reconciliation.desc=Выдвинуто предложение о национальном примирении.
+event.reconciliation.accept=Принять переговоры
+event.reconciliation.reject=Отклонить переговоры
+
+# Map Events| Local Council Autonomy
+event.autonomy.title=Местный совет объявляет автономию
+event.autonomy.desc=Местный совет в %s объявил автономию.
+event.autonomy.recognize=Признать
+event.autonomy.negotiate=Переговоры
+event.autonomy.suppress=Подавить
+
+# Map Events| Refugee Crisis
+event.refugee.title=Кризис беженцев
+event.refugee.desc=Вблизи %s разворачивается кризис беженцев.
+event.refugee.assistance=Оказать помощь
+event.refugee.military=Отдать приоритет военным нуждам
+
+# Map Events| Local Tribal Alliance
+event.tribal.title=Союз с местными племенами
+event.tribal.desc=Местные племена предложили поддержку в %s.
+event.tribal.support=Предложить поддержку
+event.tribal.ignore=Игнорировать
+
+# Settings| Window Mode Labels
+ui.settings.window_mode.windowed=Оконный
+ui.settings.window_mode.borderless=Без рамки
+ui.settings.window_mode.fullscreen=Полноэкранный
+
+# Settings| Notes
+ui.settings.note.restart_safe=Эти настройки можно безопасно менять во время игры.
+ui.settings.note.lang_live=Смена языка вступает в силу немедленно.
+
+# Settings| Dev
+ui.settings.reveal_all_units=Показать все юниты (Dev)
+
+# City Tooltip
+ui.city.tooltip.population=Население
+ui.city.tooltip.stability=Стабильность
+ui.city.tooltip.food_supply=Снабжение продовольствием
+ui.city.tooltip.food_stockpile=Запас продовольствия
+ui.city.tooltip.consumer_goods=Товары потребления
+ui.city.tooltip.cg_stockpile=Запас товаров потребления
+ui.city.tooltip.manpower_pool=Людские ресурсы
+ui.city.tooltip.building_health=Прочность зданий
+ui.city.tooltip.damaged=повреждено
+ui.city.tooltip.depot_supply=Снабжение со склада
+ui.city.tooltip.employment=Занятость
+
+# Building| Construction
+ui.building.construction_site=Стройплощадка
+ui.building.building_label=Здание
+ui.building.family_label=Семейство
+ui.building.progress_label=Прогресс
+ui.building.remaining_label=Осталось
+ui.building.cancel_construction=Отменить строительство
+
+# Building| Tooltips
+ui.building.tooltip.health=Прочность
+ui.building.tooltip.output_inventory=Склад продукции
+ui.building.tooltip.steel=Сталь
+ui.building.tooltip.supplies_stored=Запас снабжения
+ui.building.tooltip.manpower_stored=Личный состав
+ui.building.tooltip.fuel=Топливо
+ui.building.tooltip.crude_oil=Сырая нефть
+ui.building.tooltip.iron_ore=Железная руда
+ui.building.tooltip.aircraft_stored=Самолётов на складе
+ui.building.tooltip.food=Продовольствие
+ui.building.tooltip.consumer_goods_stored=Товары потребления
+
+# Building| Factory
+ui.building.no_family_assigned=СЕМЕЙСТВО НЕ НАЗНАЧЕНО
+ui.building.set_family=Назначить семейство
+ui.building.change=Сменить
+ui.building.thr=Пропускная способность
+ui.building.hq_label=Штаб
+ui.building.hq_none=НЕТ
+ui.building.no_families=Нет доступных семейств
+ui.building.none_all_families=(Нет — все семейства)
+ui.building.factories_assigned=Назначено заводов
+
+# Building| Individual Buildings (Headers)
+ui.building.oil_extractor=Нефтедобыча
+ui.building.refinery=Нефтезавод
+ui.building.agri_center=Сельскохозяйственный центр
+ui.building.iron_mine=Железный рудник
+ui.building.heavy_industry=Тяжёлая промышленность
+ui.building.civilian_industry=Гражданская промышленность
+ui.building.airbase=Авиабаза
+ui.building.arms_factory=Оружейный завод
+ui.building.vehicle_factory=Завод техники
+ui.building.artillery_factory=Артиллерийский завод
+
+# Building| Oil Extractor
+ui.building.oil.rate_ship=Скорость: %.1f барр/с  |  Отгрузка при: %d
+ui.building.oil.stored=Хранится: %d / %d баррелей
+ui.building.oil.next_barrel=Следующий баррель: %.0f%%
+ui.building.oil.dispatching=Отправка партии...
+ui.building.oil.filling=Наполнение (%d/%d)
+
+# Building| Refinery
+ui.building.refinery.rate_ship=Скорость: %.1f барр/с  |  Отгрузка при: %d
+ui.building.refinery.crude_stored=Сырая нефть: %d / %d
+ui.building.refinery.fuel_stored=Топливо: %d / %d
+ui.building.refinery.no_crude=Нет сырой нефти — простой
+ui.building.refinery.dispatching=Отправка топлива...
+ui.building.refinery.refining=Переработка...
+
+# Building| Agricultural Center
+ui.building.agri.rate_ship=Скорость: %.1f прод/с  |  Отгрузка при: %d
+ui.building.agri.stored=Хранится: %d / %d продовольствия
+ui.building.agri.dispatching=Отправка партии продовольствия...
+ui.building.agri.harvesting=Сбор урожая (%d/%d)...
+
+# Building| Iron Mine
+ui.building.iron.rate_ship=Добыча: %.1f тонн/с  |  Отгрузка при: %d
+ui.building.iron.stored=Хранится: %d / %d железной руды
+ui.building.iron.dispatching=Отправка железной руды...
+ui.building.iron.mining=Добыча (%d/%d)...
+
+# Building| Heavy Industry
+ui.building.heavy.rate_ship=Переработка: %.1f тонн/с  |  Отгрузка при: %d
+ui.building.heavy.ore_input=Ввод железной руды: %d / %d
+ui.building.heavy.steel_output=Выпуск стали: %d  (отгрузка при %d)
+ui.building.heavy.waiting_ore=Ожидание железной руды...
+ui.building.heavy.dispatching=Отправка стали...
+ui.building.heavy.smelting=Плавка...
+
+# Building| Civilian Industry
+ui.building.civ.rate_ship=Скорость: %.1f товаров/с  |  Отгрузка при: %d
+ui.building.civ.buffer_stored=Буфер: %d товаров  |  Хранится: %d / %d
+ui.building.civ.dispatching=Отправка товаров потребления...
+ui.building.civ.producing=Производство (%d/%d)...
+ui.building.civ.connected_urban=Подключённые городские зоны
+ui.building.civ.no_urban=В нации нет городских зон
+ui.building.civ.urban_entry=  %s (%.0f%%, q=%d, %.0fкм)
+ui.building.civ.show_less=Показать меньше
+ui.building.civ.show_all=Показать всё
+ui.building.civ.nation_status=Статус нации
+ui.building.civ.avg_supply=  Среднее снабжение: %.0f%%  |  Минимум: %.0f%%  |  Городские зоны: %d
+ui.building.civ.rate_demand=  Ваша скорость: %.1f/с  |  Общий спрос: %.1f/с
+ui.building.civ.tooltip=Товары потребления повышают городскую стабильность и снижают беспорядки.
+
+# Building| Depot
+ui.building.depot.equipment=Снаряжение: %d / %d
+ui.building.depot.manpower=Личный состав: %d / %d
+ui.building.depot.crude=Сырая нефть: %d / %d
+ui.building.depot.fuel=Топливо: %d / %d
+
+# Building| Airbase
+ui.building.airbase.aircraft=Самолёты: %d / %d (%d назначено)
+ui.building.airbase.stationed=Базирующиеся самолёты
+ui.building.airbase.no_aircraft=Здесь нет базирующихся самолётов
+ui.building.airbase.sorties=Вылеты
+ui.building.airbase.no_sorties=Нет запланированных вылетов
+ui.building.airbase.new_sortie=+ Новый вылет
+ui.building.airbase.airborne=[В ВОЗДУХЕ]
+ui.building.airbase.planned=[ЗАПЛАНИРОВАН]
+ui.building.airbase.sortie_entry=Вылет #%d — %s
+ui.building.airbase.aircraft_count=Самолёты: %d  |  Высота: %.0f фт
+ui.building.airbase.target=Цель: (%.4f, %.4f)
+ui.building.airbase.no_target=Цель не задана
+ui.building.airbase.edit=Изменить
+ui.building.airbase.dismiss=Отменить
+ui.building.airbase.launch=Запустить
+ui.building.airbase.x_button=X
+ui.building.airbase.assign_hq=Назначить штаб
+ui.building.airbase.unassign=Снять назначение
+ui.building.airbase.available_fmt=(%d доступно)
+
+# Building| Creation Tab
+ui.building.create.select_type=Выберите тип здания
+ui.building.create.click_to_place=ЛКМ по карте для размещения.
+ui.building.create.press_b=Нажмите B или «Отмена» для закрытия.
+ui.building.create.arms_factory=Оружейный завод
+ui.building.create.military_hq=Военный штаб
+ui.building.create.depot=Склад
+ui.building.create.oil_extractor=Нефтедобыча
+ui.building.create.refinery=Нефтезавод
+ui.building.create.agri_center=Агроцентр
+ui.building.create.iron_mine=Железный рудник
+ui.building.create.heavy_industry=Тяжёлая промышленность
+ui.building.create.vehicle_factory=Завод техники
+ui.building.create.artillery_factory=Артиллерийский завод
+ui.building.create.civilian_industry=Гражданская промышленность
+ui.building.create.cancel=Отмена
+
+# Unit Tooltips
+ui.tooltip.unknown_unit=Неизвестный юнит
+ui.tooltip.unknown=Неизвестно
+ui.tooltip.fuel_status=Топливо: %.0f%% (%+.1f/т)  Штраф: %.0f%%
+ui.tooltip.road_health=Состояние дороги: %.0f%% (-%.0f%% скорости)
+
+# Infantry / Road Health Label
+ui.label.road_health=Состояние дороги
+ui.label.health=Прочность
+
+# Economy Tab
+ui.economy.treasury_label=Казна
+ui.economy.income_label=Доход
+ui.economy.expenses_label=Расходы
+ui.economy.net_label=Баланс
+ui.economy.total_income_fmt=Общий доход:        +%.1f /с
+ui.economy.total_expenses_fmt=Общие расходы:      -%.1f /с
+ui.economy.net_fmt=Баланс:             %+.1f /с
+ui.economy.net_tooltip_fmt=Скорость чистого дохода. При такой скорости казна %s на %.0f за следующую минуту.
+ui.economy.net_grow=вырастет
+ui.economy.net_shrink=сократится
+ui.economy.urban_tax_fmt=Городские налоги:   +%.1f /с
+ui.economy.oil_exports_fmt=Экспорт нефти:      +%.1f /с
+ui.economy.foreign_aid_fmt=Иностранная помощь: +%.1f /с
+ui.economy.military_upkeep_fmt=Содержание армии:   -%.1f /с
+ui.economy.building_upkeep_fmt=Содержание зданий:  -%.1f /с
+ui.economy.equip_purchases_fmt=Закупки снаряжения: -%.1f /с
+ui.economy.resources_label=Национальные запасы ресурсов
+ui.economy.crude_oil_fmt=Сырая нефть:        %d
+ui.economy.fuel_fmt=Топливо:            %d
+ui.economy.iron_ore_fmt=Железная руда:      %d
+ui.economy.steel_fmt=Сталь:              %d
+ui.economy.food_fmt=Продовольствие:     %d
+ui.economy.consumer_goods_fmt=Товары потребления: %d
+
+# Economy| Tooltips
+ui.economy.tooltip.tax=Налоговые поступления от городского населения под вашим контролем.\nПриблизительно 1 казны/с на 1000 жителей.
+ui.economy.tooltip.oil=Доход от экспорта излишков сырой нефти\n(добыча сверх нужд нефтезаводов и расхода топлива юнитами).\n1 баррель/с излишка = 0.5 казны/с.
+ui.economy.tooltip.aid=Финансовая помощь от других наций\nпо действующим соглашениям о финансовой помощи.
+ui.economy.tooltip.military_upkeep=Обслуживание снаряжения (0.5%% от стоимости производства/с за единицу)\n+ жалованье личному составу (0.5/с за юнит).
+ui.economy.tooltip.building_upkeep=Расходы на содержание всех зданий.\nЗаводы: 1.0/с, Штаб: 2.0/с, Склады: 0.5/с,\nНефтедобыча/Нефтезавод/Рудник/Тяжёлая промышленность: 1.5/с,\nСельхозцентр: 0.5/с, Гражданская промышленность: 0.3/с, Авиабаза: 3.0/с.
+ui.economy.tooltip.equip_purchases=Амортизированная стоимость снаряжения, закупленного\nу других наций по соглашениям о поставках.
+
+# Politics Tab
+ui.politics.political_support_label=Политическая поддержка
+ui.politics.civilian_stability_label=Гражданская стабильность
+ui.politics.victory_progress_label=Прогресс к победе
+ui.politics.active_policies_label=Действующие политики
+ui.politics.objectives_label=Задачи
+ui.politics.conscription_label=Призыв
+ui.politics.economy_label=Экономика
+ui.politics.security_label=Безопасность
+ui.politics.hold_until_fmt=Удерживать до: %04d-%02d-%02d
+ui.politics.elite=Элита
+ui.politics.military=Военные
+ui.politics.government=Правительство
+ui.politics.urban_civilian=Городское население
+
+# Politics| Policy Effects
+ui.politics.effects_on_selection=Эффекты выбора
+ui.politics.effect.elite=Элита
+ui.politics.effect.military=Военные
+ui.politics.effect.government=Правительство
+ui.politics.effect.urban_civilian=Городское население
+ui.politics.effect.stability=Стабильность
+ui.politics.effect.manpower=Личный состав
+ui.politics.effect.factory_output=Выпуск заводов
+ui.politics.effect.consumer_goods=Товары потребления
+ui.politics.effect.no_change=Без изменений
+
+# Military Tab
+ui.military.unit_composition=Редактор состава юнитов
+ui.military.live_unit_editor=Редактор активных юнитов
+ui.military.unit_types=Типы юнитов
+ui.military.selected_fmt=Выбрано (%d)
+ui.military.composition=Состав
+ui.military.no_units=Юниты не выбраны.
+ui.military.composition_goals_fmt=Цели состава  (юнитов: %d%s)
+ui.military.goal=Цель
+ui.military.sync_all=Синхронизировать всё
+ui.military.select_prompt=Выберите тип юнита из списка или выделите юниты на карте и нажмите C.
+ui.military.add_family=+ Добавить семейство
+
+# Sortie Tab
+ui.sortie.airborne=В ВОЗДУХЕ
+ui.sortie.planned=ЗАПЛАНИРОВАН
+ui.sortie.title_fmt=Вылет #%d [%s]
+ui.sortie.aircraft_assigned=Назначенные самолёты
+ui.sortie.none_assigned=Ничего не назначено
+ui.sortie.add_aircraft=Добавить самолёт
+ui.sortie.remove_aircraft=Убрать самолёт
+ui.sortie.select_aircraft=Выбрать тип самолёта
+ui.sortie.no_aircraft_avail=Нет доступных самолётов
+ui.sortie.mission_label=Задание
+ui.sortie.target_label=Цель
+ui.sortie.no_target_set=Цель не задана
+ui.sortie.set_target=Указать цель на карте
+ui.sortie.click_map=Кликните по карте...
+ui.sortie.clear=Очистить
+ui.sortie.altitude=Высота
+ui.sortie.air_radius=Радиус патруля
+ui.sortie.mission_strength=Сила задания
+ui.sortie.org_efficiency=Эффективность организации
+ui.sortie.large_batch=(Штраф за большую группу)
+ui.sortie.low_fuel=МАЛО ТОПЛИВА
+ui.sortie.slowest_aircraft=Самый медленный самолёт: %.6f ед/с
+ui.sortie.time_airborne=Время в воздухе: %.0f с
+ui.sortie.dismiss_recall=Отбой (отозвать самолёты)
+ui.sortie.close=Закрыть
+ui.sortie.launch_sortie=ЗАПУСТИТЬ ВЫЛЕТ
+ui.sortie.need_aircraft=Нужны самолёты и цель для запуска
+ui.sortie.launch_idle=Запуск без цели (патрулирование)
+
+# Sortie| Aircraft Tooltip
+ui.sortie.tooltip.alt=Высота
+ui.sortie.tooltip.mission=Задание
+ui.sortie.tooltip.strength=Сила
+ui.sortie.tooltip.efficiency=Эффективность
+ui.sortie.tooltip.fuel_fmt=Топливо: %.0f / %.0f (%.0f%%)
+ui.sortie.tooltip.helicopter=(Вертолёт)
+ui.sortie.tooltip.phase=Фаза
+ui.sortie.tooltip.state=Состояние
+
+# Sortie — Flight Phases
+ui.sortie.phase.transit=Перелёт
+ui.sortie.phase.racetrack=Овал
+ui.sortie.phase.figure8=Восьмёрка
+ui.sortie.phase.ingress=Заход
+ui.sortie.phase.egress=Отход
+ui.sortie.phase.weave=Змейка
+ui.sortie.state.transit=Перелёт
+ui.sortie.state.on_station=На позиции
+ui.sortie.state.rtb=Возврат
+
+# City Tab| Construction Buttons
+ui.button.agri_center=Агроцентр
+ui.button.civ_industry=Гражданская промышленность
+ui.button.airbase=Авиабаза
+
+# Unit Creation Tab
+ui.window.unit_creator=Создание юнитов
+
+# End Game
+ui.endgame.title=ПОБЕДА
+ui.endgame.subtitle=Все задачи выполнены. Нация едина.
+
+# HQ Assignment
+ui.building.hq_name=Штаб
+ui.building.hq_assign=Назначить штаб
+ui.building.hq_unassign=Снять назначение
